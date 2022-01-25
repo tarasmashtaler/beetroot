@@ -1,0 +1,11 @@
+body{
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;    
+}
+img{
+    display: flex;
+    margin: 0 auto;
+}
