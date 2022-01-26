@@ -2,23 +2,20 @@ body {
   font-size: 25px;
   color: rgb(99, 99, 134);
 }
-
 header {
   text-align: center;
 }
-
 p a,
 em {
-  color: rgb(87, 23, 23);
+  color: blueviolet;
 }
-
-li a{
-  /* color: rgb(99, 99, 134);   */
+li a {
+  color: rgb(21, 148, 32);
 }
-li a:hover{
+li a:hover {
   color: blueviolet;
   font-size: 30px;
 }
-span{
+span {
   font-size: 18px;
 }

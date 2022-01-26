@@ -1,0 +1,18 @@
+header {
+  font-size: 25px;
+}
+header a {
+  color: rgb(108, 39, 187);
+}
+h1 {
+  text-align: center;
+  color: rgb(99, 99, 134);
+}
+p {
+  margin: 0 20px;
+  font-size: 20px;
+}
+.git {
+  margin: 20px 0 0 20px;
+  font-size: 25px;
+}
