@@ -1,3 +1,11 @@
-h1{
-    text-align: center;
+body{
+  font-size: 25px;
+}
+header{
+  text-align: center;
+  color: rgb(99, 99, 134);
+}
+
+p a, em{
+  color: rgb(87, 23, 23);
 }
