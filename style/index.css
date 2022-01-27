@@ -1,0 +1,21 @@
+body {
+  font-size: 25px;
+  color: rgb(99, 99, 134);
+}
+header {
+  text-align: center;
+}
+p a,
+em {
+  color: blueviolet;
+}
+li a {
+  color: rgb(21, 148, 32);
+}
+li a:hover {
+  color: blueviolet;
+  font-size: 30px;
+}
+span {
+  font-size: 18px;
+}
