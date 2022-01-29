@@ -1,20 +1,26 @@
+/* css for body */
 body {
   font-size: 25px;
   color: rgb(99, 99, 134);
 }
+/* css for header */
 header {
   text-align: center;
 }
+/* link in paragraph */
 p a,
 em {
   color: blueviolet;
 }
+/* link in the list */
 li a {
   color: rgb(21, 148, 32);
 }
+/* color when referenced */
 li a:hover {
   color: blueviolet;
 }
+/* font size span */
 span {
   font-size: 18px;
 }
