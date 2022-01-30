@@ -4,13 +4,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 /* css for header */
 header {
   font-size: 25px;
 }
 header a {
   color: rgb(108, 39, 187);
+  margin-left: 20px;
 }
 /* css for h1 in main */
 h1 {
@@ -22,7 +22,7 @@ p {
   margin: 0 20px;
   font-size: 20px;
 }
-.git {
+.git_link{
   margin: 20px 0 0 20px;
   font-size: 25px;
 }
