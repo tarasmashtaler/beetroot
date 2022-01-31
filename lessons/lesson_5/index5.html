@@ -7,29 +7,141 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="../../style/normalize.css" />
     <!-- my css -->
-    <link rel="stylesheet" href="./style/index5.css" />
-    <title>lesson_5(CSS-селектори)</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>lesson_5(Знайомство з CSS)</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <!-- GO TO HOME PAGE -->
-      <a href="./../../index.html" target="_blank" title="Home page"
-        >Beetroot Homework</a
-      >
+      <div class="container">
+        <nav>
+          <a class="nav_a" href="http://">Home</a>
+          <a href="http://">About me</a>
+          <a href="http://">Skills</a>
+          <a href="http://">Portfolio</a>
+          <a href="http://">Contacts</a>
+        </nav>
+      </div>
+      <div class="header_line"></div>
     </header>
     <!-- MAIN PART -->
     <main>
-      <h1>lesson№5(CSS-селектори)</h1>
-      <p class="git_link">
-        За цим посиланням ти перейдеш на мою домашню роботу для
-        <a
-          href="https://github.com/tarasmashtaler/beetroot/blob/main/lessons/lesson_5/index.html"
-          target="_blank"
-          title="lesson_5 tarasmashtaler"
-          >LESSON №5 on GITHUB</a
-        >
-      </p>
+      <!-- SECTION -->
+      <section>
+        <div class="container">
+          <h1>Denis Novik</h1>
+          <img
+            class="img_one"
+            src="../lesson_5/assets/images/BSPP2266x940.jpg"
+            alt="foto"
+            width="944"
+            height="387"
+          />
+        </div>
+      </section>
+      <!-- SECTOIN TWO -->
+      <section class="sect_two">
+        <div class="container">
+          <div class="about">
+            <h2>About me</h2>
+            <div class="text">
+              <p>
+                Hi, I'm Denis – UX/UI designer from Minsk. <br />
+                I'm interested in design and everything connected with it.
+              </p>
+
+              <p>
+                I'm studying at courses "Web and mobile design <br />
+                interfaces" in IT-Academy.
+              </p>
+              <p>
+                Ready to implement excellent projects <br />
+                with wonderful people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION THREE -->
+      <section class="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <p class="s3_text">I work in such programs as</p>
+          <div class="s3_block">
+            <div>
+              <img
+                src="../lesson_5/assets/images/f1.png"
+                alt="Adobe
+              Photoshop"
+                srcset=""
+              />
+            </div>
+            <div>
+              <img
+                src="../lesson_5/assets/images/f2.png"
+                alt="Adobe 
+              Illustrator"
+                srcset=""
+              />
+            </div>
+            <div>
+              <img
+                src="../lesson_5/assets/images/f3.png"
+                alt="Adobe 
+              After Effects"
+                srcset=""
+              />
+            </div>
+            <div>
+              <img
+                src="../lesson_5/assets/images/f4.png"
+                alt="Figma"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <h3>Contacts</h3>
+        <p class="footer_text">
+          Want to know more or just chat? <br />
+          You are welcome!
+        </p>
+        <div class="footer_link">
+          <a href="mailto:" class="footer_icon">Send message</a>
+        </div>
+        <div class="footer_img">
+          <img
+            src="../lesson_5/assets/images/Vector.svg"
+            alt="foto1"
+            srcset=""
+          />
+          <img
+            src="../lesson_5/assets/images/Vector1.png"
+            alt="foto1"
+            srcset=""
+          />
+          <img
+            src="../lesson_5/assets/images/Vector2.svg"
+            alt="foto1"
+            srcset=""
+          />
+          <img
+            src="../lesson_5/assets/images/Vector3.png"
+            alt="foto1"
+            srcset=""
+          />
+        </div>
+        <p class="footer_text_end">
+          Like me on <br />
+          LinkedIn, Instagram, Behance, <br />
+          Dribble
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
