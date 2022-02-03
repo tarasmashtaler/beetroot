@@ -159,3 +159,20 @@ input:checked:before {
   line-height: 21px;
   text-decoration: none;
 }
+/*footer*/
+footer{
+ display: flex;
+ justify-content: center;
+ background-color: black;
+ }
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  color: white;
+
+}
