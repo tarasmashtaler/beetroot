@@ -84,11 +84,10 @@ li {
   text-align: start;
   border: 2px solid #88839e;
   display: flex;
-  transition: .35s cubic-bezier(0.4, 0, 0.2, 1);
- }
-li:nth-child(2n){
-  background-color:#7A7593;
-  ;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+li:nth-child(2n) {
+  background-color: #7a7593;
 }
 li:hover {
   border: 2px solid white;
@@ -111,14 +110,14 @@ input {
   width: 20px;
   cursor: pointer;
 }
- input:before {
+input:before {
   content: "";
   height: 20px;
   width: 20px;
   background-color: #ffffff;
   display: block;
-} 
-input:checked + label span{
+}
+input:checked + label span {
   text-decoration: line-through;
 }
 input:checked:before {
@@ -153,7 +152,7 @@ input:checked:before {
   margin-top: 45px;
   padding-top: 12px;
 }
-button{
+button {
   background-color: #4a4f56;
   font-size: 18px;
   line-height: 21px;
@@ -162,12 +161,12 @@ button{
   border: none;
 }
 /*footer*/
-footer{
- display: flex;
- justify-content: center;
- background-color: black;
- }
-.footer-container{
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
