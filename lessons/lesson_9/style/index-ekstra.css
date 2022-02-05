@@ -1,0 +1,48 @@
+/* variables */
+:root {
+  --c-gray: #2b81ac;
+  --c-blue: #3399cc;
+}
+ {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--c-gray);
+  padding: 15px;
+}
+/* main */
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--c-blue);
+}
+.main-wrap {
+  width: 100%;
+  max-width: 540px;
+  font-size: 0;
+}
+.main-item{
+    display: inline-block;
+    background: forestgreen;
+    padding: 15px 0;
+    text-align: center;
+    border: 3px solid white;
+}
+span {
+    font-size: 16px;
+}
+.one-col {
+    width: 25%;
+}
+.two-col {
+    width: 50%;
+}
+.four-col {
+    width: 100%;
+}
