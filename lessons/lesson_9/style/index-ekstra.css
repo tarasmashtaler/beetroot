@@ -27,22 +27,39 @@ section {
   max-width: 540px;
   font-size: 0;
 }
-.main-item{
-    display: inline-block;
-    background: forestgreen;
-    padding: 15px 0;
-    text-align: center;
-    border: 3px solid white;
+.main-item {
+  display: inline-block;
+  padding: 15px 0;
+  text-align: center;
+  border: 3px solid white;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
 }
 span {
-    font-size: 16px;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  letter-spacing: 0.05em;
 }
 .one-col {
-    width: 25%;
+  width: 25%;
 }
 .two-col {
-    width: 50%;
+  width: 50%;
 }
 .four-col {
-    width: 100%;
+  width: 100%;
+}
+.paris {
+  background-color: #33CCCC;
+  ;
+}
+.belgrade {
+  background-color: #996699;
+  ;
+}
+.venice {
+  background-color: #C24747;
+  ;
 }

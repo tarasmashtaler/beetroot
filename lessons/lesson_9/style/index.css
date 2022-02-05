@@ -8,8 +8,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* font */
 body {
-  font-family: "Lato", sans-serif;
   font-family: "Poppins", sans-serif;
 }
 /* header */
@@ -39,11 +39,15 @@ li {
   font-size: 14px;
   color: #2f281e;
 }
-a {
+li:nth-child(4) {
+  margin-right: 30px;
+}
+
+li a {
   text-decoration: none;
 }
-.header-list {
-  /* padding-left: 320px; */
+button {
+  cursor: pointer;
 }
 .header-button {
   display: flex;
@@ -54,7 +58,6 @@ a {
   white-space: nowrap;
   font-size: 16px;
   border-radius: 4px;
-  cursor: pointer;
   font-weight: 600;
 }
 .header-button button:first-child {
@@ -68,9 +71,6 @@ a {
   background: var(--c-yellow);
   border: none;
 }
-.sp {
-  margin: 0 5px;
-}
 /* main */
 .main-wrap {
   width: 100%;
@@ -83,6 +83,7 @@ a {
   margin-top: 110px;
 }
 h2 {
+  line-height: 54px;
   font-size: 44px;
   color: #2f281e;
 }
@@ -93,6 +94,9 @@ h2 {
   font-size: 18px;
   line-height: 28px;
 }
+.button-two a {
+  margin-left: 30px;
+}
 .main-blok-right {
   width: 500px;
   margin-top: 60px;
@@ -101,10 +105,11 @@ h2 {
 .main-blok-right img {
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -150px;
 }
-.main-blok-right img:first-child {
-  z-index: 2;
+.main-blok-right img:last-child {
+  padding-left: 50px;
+  z-index: -1;
 }
 .main-button-one {
   width: 175px;
@@ -119,4 +124,5 @@ a {
   text-decoration: underline;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 600;
 }
