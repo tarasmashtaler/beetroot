@@ -26,6 +26,7 @@ section {
   width: 100%;
   max-width: 540px;
   font-size: 0;
+  height: 10px;
 }
 .main-item {
   display: inline-block;
@@ -42,24 +43,46 @@ span {
   color: white;
   letter-spacing: 0.05em;
 }
-.one-col {
-  width: 25%;
-}
-.two-col {
+.lisbon {
   width: 50%;
 }
-.four-col {
-  width: 100%;
-}
 .paris {
-  background-color: #33CCCC;
-  ;
+  width: 25%;
+  background-color: #33cccc;
 }
 .belgrade {
+  width: 25%;
   background-color: #996699;
-  ;
 }
 .venice {
-  background-color: #C24747;
-  ;
+  width: 25%;
+  background-color: #c24747;
+}
+.tel {
+  width: 25%;
+  background-color: #e2674a;
+}
+.kyiv {
+  width: 25%;
+  background-color: #ffcc66;
+}
+.amsterdam {
+  width: 25%;
+  background-color: #99cc99;
+}
+.tokyo {
+  width: 25%;
+  background-color: #669999;
+}
+.san {
+  width: 50%;
+  background-color: #cc6699;
+}
+.sydney {
+  width: 25%;
+  background-color: #339966;
+}
+.new {
+  width: 100%;
+  background-color: #666699;
 }
