@@ -3,7 +3,7 @@
   --c-gray: #2b81ac;
   --c-blue: #3399cc;
 }
- *{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -26,14 +26,12 @@ section {
   width: 100%;
   max-width: 540px;
   font-size: 0;
-  /* border-right: 3px solid white;
-  border-bottom: 3px solid white; */
 }
 .main-wrap:hover .main-item {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
-ul{
+ul {
   padding: 0;
   margin: 0;
 }
@@ -56,6 +54,13 @@ span {
   line-height: 19px;
   color: white;
   letter-spacing: 0.05em;
+}
+img {
+  font-size: 21px;
+}
+i {
+  font-size:23px ;
+  margin-top: 5px;
 }
 .lisbon {
   width: 50%;
