@@ -1,0 +1,243 @@
+/* variables */
+:root {
+  /* color */
+  --c-yellow: #ff9900;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* font */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* header */
+.header-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto 75px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80 px;
+}
+.header-logo {
+  display: flex;
+}
+h1 {
+  padding-left: 10px;
+  color: #173a56;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #2f281e;
+}
+.header-list li:nth-child(4) {
+  margin-right: 30px;
+}
+li a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.header-button {
+  display: flex;
+}
+.header-button button {
+  width: 110px;
+  height: 45px;
+  white-space: nowrap;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.header-button button:first-child {
+  margin-right: 15px;
+  color: #173a56;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.b-one {
+  background: white;
+  border: 1px solid #bcd0e5;
+}
+.b-two {
+  background: var(--c-yellow);
+  border: none;
+}
+/* main */
+.main-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-blok-left {
+  margin-top: 110px;
+  width: 100%;
+  max-width: 520px;
+}
+h2 {
+  height: 110px;
+  line-height: 54px;
+  font-size: 44px;
+  color: #2f281e;
+  margin-bottom: 30px;
+}
+
+.text {
+  width: 100%;
+  max-width: 460px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+.button-two a {
+  margin-left: 30px;
+}
+.main-blok-right {
+  width: 600px;
+  position: relative;
+}
+.main-blok-right img {
+  position: absolute;
+  left: 0px;
+}
+.main-blok-right img:last-child {
+  margin: 30px 0 0 50px;
+  z-index: -1;
+  left: -30px;
+}
+.main-button-one {
+  width: 100%;
+  max-width: 175px;
+  height: 55px;
+  background: var(--c-yellow);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+a {
+  color: var(--c-yellow);
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+/* sectoin two */
+.container-section-two {
+  width: 100%;
+  max-width: 1100px;
+  margin: 190px auto 210px auto;
+  text-align: center;
+}
+.section-two-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+h3 {
+  width: 100%;
+  max-width: 540px;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.section-two-cont img {
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 33px;
+}
+.section-two-cont p {
+  width: 100%;
+  max-width: 240px;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* footer */
+footer {
+}
+.footer-border {
+  width: 1100px;
+  height: 1px;
+  background: rgba(188, 208, 229, 0.496913);
+  margin: 0 auto;
+}
+.footer-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 105px auto 80px;
+}
+.content-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer-nav li {
+  padding: 5px 0 5px 0;
+  list-style-type: none;
+}
+.footer-nav li a {
+  color: #544837;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-nav li a:hover {
+  color: var(--c-yellow);
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+.content-center {
+  display: flex;
+  flex-direction: column;
+  color: #544837;
+}
+input {
+  width: 100%;
+  max-width: 325px;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  max-width: 130px;
+  height: 40px;
+  background-color: var(--c-yellow);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 15px;
+}
+.content-right {
+  margin-left: 80px;
+  width: 325px;
+}
+.content-center {
+  margin-left: 175px;
+}
