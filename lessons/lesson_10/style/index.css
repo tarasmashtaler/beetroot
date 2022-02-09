@@ -105,6 +105,9 @@ h2 {
 .button-two a {
   margin-left: 30px;
 }
+.button-two img {
+  margin-right: 10px;
+}
 .main-blok-right {
   width: 600px;
   height: 500px;
