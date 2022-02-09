@@ -26,7 +26,7 @@ body {
   display: flex;
 }
 h1 {
-  padding-left: 10px;
+  margin-left: 10px;
   color: #173a56;
 }
 .header-right {
@@ -199,6 +199,9 @@ footer {
   justify-content: flex-end;
   align-items: center;
   margin-top: 30px;
+}
+.footer-container img:nth-child(2) {
+  margin-left: 10px;
 }
 .footer-nav li {
   padding: 5px 0 5px 0;
