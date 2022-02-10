@@ -59,10 +59,10 @@
 .navigation-logo-end {
 margin: 15px 35px 0 0;
 }
-.main-text h1 {
+.main-text-one h1 {
   text-transform: uppercase;
 }
-.main-text h1::first-letter {
+.main-text-one h1::first-letter {
   font-size: 20px;
   vertical-align: top;
 }
