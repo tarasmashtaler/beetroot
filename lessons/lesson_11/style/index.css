@@ -43,13 +43,13 @@ header {
 /* main */
 .main-up {
   margin-bottom: 50px;
+  padding: 0 25px 0 45px;
 }
 /* section nav */
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1850px;
   margin: 0 auto;
-  padding: 5px;
 }
 .main-container {
   display: flex;
@@ -75,6 +75,9 @@ header {
   margin: 15px 35px 0 0;
 }
 /* sectoin text */
+.main-down {
+  padding: 0 25px 0 45px;
+}
 .main-text-one p {
   letter-spacing: 0.04em;
   font-family: var(--ffr-roboto);
@@ -82,7 +85,6 @@ header {
 h2 {
   text-transform: uppercase;
   font-family: var(--ffpts-PTSans);
-  vertical-align: top;
 }
 .main-text-one h2::first-letter {
   font-size: 15px;
