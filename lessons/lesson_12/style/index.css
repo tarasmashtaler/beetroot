@@ -12,7 +12,7 @@
 }
 /* header */
 /* fonts */
-header {
+body {
   font-family: var(--ffr-roboto);
 }
 .home {
@@ -41,15 +41,29 @@ header {
   font-size: 20px;
 }
 /* main */
-.main-up {
-  margin-bottom: 50px;
+main {
+  min-height: 100%;
+}
+.main-wrap {
+  height: 75px;
+}
+.main-cont {
+  display: flex;
+  justify-content: space-between;
 }
 /* section nav */
+.main-up {
+  width: 100%;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+}
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 5px;
 }
 .main-container {
   display: flex;
@@ -74,7 +88,59 @@ header {
 .navigation-logo-end {
   margin: 15px 35px 0 0;
 }
+/* section-left */
+.main-left {
+  position: relative;
+}
+.left-container {
+  position: sticky;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+}
+.left-container-one {
+  height: 105px;
+  margin: 0 40px;
+}
+.left-container-two,
+.left-container-three,
+.left-container-four {
+  height: 140px;
+  margin: 0 40px;
+}
+.left-container a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.left-container-one span:nth-child(1) {
+  font-size: 70%;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.left-container-two span:nth-child(1) {
+  font-size: 70%;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.left-container-three span:nth-child(1) {
+  font-size: 70%;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.left-container-four span:nth-child(1) {
+  font-size: 70%;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.line1 {
+  width: 100%;
+  border: 1px solid #bfbfbf;
+}
 /* sectoin text */
+.main-down {
+  width: 640px;
+}
 .main-text-one p {
   letter-spacing: 0.04em;
   font-family: var(--ffr-roboto);
@@ -82,7 +148,6 @@ header {
 h2 {
   text-transform: uppercase;
   font-family: var(--ffpts-PTSans);
-  vertical-align: top;
 }
 .main-text-one h2::first-letter {
   font-size: 15px;
@@ -95,15 +160,22 @@ a {
 .text {
   background: #c9c9c9;
 }
+/* main-image */
+.main-image {
+  width: 300px;
+  height: 300px;
+  background: rgb(190, 150, 150);
+position: fixed;
+bottom: -30px;
+right: -30px;
+}
 /*footer*/
 /* fonts */
-footer {
-  font-family: var(--ffr-roboto);
-}
 footer {
   display: flex;
   justify-content: center;
   background-color: black;
+  font-family: var(--ffr-roboto);
 }
 .footer-container {
   display: flex;
