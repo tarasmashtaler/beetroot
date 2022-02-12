@@ -7,13 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,80 +23,59 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header> -->
-    <!-- go to home page -->
-    <!-- <div class="home">
-      <a href="./../../index.html" target="_blank" title="Home page"
-        ><span>Beetroot Homework</span></a
-      >
-      <div class="lesson">
-        <span>CSS-позиціювання і трансформація</span>
-      </div>
-      <nav class="nav">
-        <a href="mailto:tarasmash74@gmail.com"><span>напиши мені</span></a>
-        <a href="tel:+380503735401"><span>позвони мені</span></a>
-        <a href="../lesson_2/index.html"><span>про мене</span> </a>
-      </nav>
-    </div>
-  </header> -->
-    <!-- main -->
-    <main>
-      <div class="main-wrap">
-        <div class="main-up">
-          <div class="container">
-            <div class="main-container">
-              <nav>
-                <div class="navigation">
-                  <div class="navigation-logo">
-                    <img src="./assets/images/ENG.svg" alt="" srcset="" />
-                  </div>
-                  <div class="navigation-items">
-                    <a href="http://"><span>Documentation</span></a>
-                    <span>/</span>
-                    <a href="http://"><span>Who's using</span></a>
-                  </div>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="header-container">
+            <nav>
+              <div class="navigation">
+                <div class="navigation-logo">
+                  <img src="./assets/images/ENG.svg" alt="" srcset="" />
                 </div>
-              </nav>
-              <div class="navigation-logo-end">
-                <img src="./assets/images/company-logo-black.svg" alt="foto1" />
+                <div class="navigation-items">
+                  <a href="http://"><span>Documentation</span></a>
+                  <span>/</span>
+                  <a href="http://"><span>Who's using</span></a>
+                </div>
               </div>
+            </nav>
+            <div class="navigation-logo-end">
+              <img src="./assets/images/company-logo-black.svg" alt="foto1" />
             </div>
           </div>
         </div>
       </div>
-      
+    </header>
+    <!-- main -->
+    <main>
+      <div class="main-wrap"></div>
       <div class="main-cont">
-        <!-- section nav -->
-
         <!-- section-left -->
         <div class="main-left">
-            <div class="left-container">
-              <div class="left-container-one">
-                <a href="#intr"><span>1</span><span>Introduction</span></a>
-              </div>
-              <div class="line1"></div>
-              <div class="left-container-two">
-                <a href="#core"><span>2</span><span>Core Components</span></a>
-              </div>
-              <div class="line1"></div>
-              <div class="left-container-three">
-                <a href="#react"
-                  ><span>3</span><span>React Fundamentals</span></a
-                >
-              </div>
-              <div class="line1"></div>
-              <div class="left-container-four">
-                <a href="#hand"
-                  ><span>4</span><span>Handling Text Input</span></a
-                >
-              </div>
-              <div class="line1"></div>
+          <div class="left-container">
+            <div class="left-container-one">
+              <a href="#intr"><span>1</span><span>Introduction</span></a>
             </div>
+            <div class="line1"></div>
+            <div class="left-container-one">
+              <a href="#core"><span>2</span><span>Core Components</span></a>
+            </div>
+            <div class="line2"></div>
+            <div class="left-container-one">
+              <a href="#react"><span>3</span><span>React Fundamentals</span></a>
+            </div>
+            <div class="line3"></div>
+            <div class="left-container-one">
+              <a href="#hand"><span>4</span><span>Handling Text Input</span></a>
+            </div>
+            <div class="line4"></div>
+          </div>
         </div>
         <!-- section text -->
         <div class="main-down">
           <div class="main-text-one">
-            <h2>1 Introduction</h2>
+            <div class="text-line"></div>
+            <h2 id="intr">Introduction</h2>
             <br />
             <p class="main-one">
               Welcome to the very start of your React Native journey! If you're
@@ -111,8 +84,9 @@
               >. Continue reading for an introduction to the documentation,
               Native Components, React, and more!
             </p>
-            <br /><br />
-            <h2>2 Core Components</h2>
+            <br />
+            <div class="text-line"></div>
+            <h2 id="core">Core Components</h2>
             <br />
             <p>
               React Native is an open source framework for building Android and
@@ -124,7 +98,8 @@
               first, let’s cover how components work in React Native.
             </p>
             <br /><br />
-            <h2>3 React Fundamentals</h2>
+            <div class="text-line"></div>
+            <h2 id="react">React Fundamentals</h2>
             <br />
             <p>
               React Native runs on <a href=""><span>React</span></a
@@ -165,7 +140,8 @@
               your components memory!
             </p>
             <br /><br />
-            <h2>4 Handling Text Input</h2>
+            <div class="text-line"></div>
+            <h2 id="hand">Handling Text Input</h2>
             <br />
             <p>
               TextInput is a Core Component that allows the user to enter text.
@@ -178,12 +154,15 @@
               For example, let's say that as the user types, you're translating
               their words into a different language. In this new language, every
               single word is written the same way: &#127829;. So the sentence
-              "Hello there Bob" would be translated as "&#127829;&#127829;".
+              "Hello there Bob" would be translated as
+              "&#127829;&#127829;&#127829;".
             </p>
             <br />
           </div>
         </div>
-        <div class="main-image"></div>
+        <div class="main-image">
+          <img src="../lesson_12/assets/images/Frame 1.svg" alt="foto" />
+        </div>
       </div>
     </main>
     <!-- <footer>
