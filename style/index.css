@@ -18,6 +18,9 @@ em {
   color: blueviolet;
 }
 /* MAIN PART */
+ul {
+  margin: 50px;
+}
 /* link in the list */
 li a {
   color: rgb(21, 148, 32);
