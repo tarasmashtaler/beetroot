@@ -58,15 +58,13 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .section-one-line {
   width: 80px;
   height: 12px;
   background: #000000;
-  margin-bottom: 15px;
-  margin-right: 20px;
-  margin-top: 140px;
+  margin: 140px 20px 15px 0;
 }
 .section-one-text span {
   font-weight: normal;
