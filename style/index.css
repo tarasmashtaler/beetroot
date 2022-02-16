@@ -5,7 +5,7 @@
 }
 /* css for body */
 body {
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(99, 99, 134);
 }
 /* css for header */
@@ -31,14 +31,11 @@ li a:hover {
 }
 /* font size span */
 li span {
-  font-size: 22px;
+  font-size: 18px;
 }
 /*footer*/
 /* fonts */
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   background-color: blueviolet;
