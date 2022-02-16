@@ -27,6 +27,7 @@ body {
   top: 0;
   left: 0;
   background: white;
+  height: 75px;
 }
 .navigation-items a {
   font-weight: normal;
@@ -36,7 +37,6 @@ body {
 .navigation-items span:nth-child(2) {
   font-size: 50%;
 }
-
 .container {
   width: 100%;
   max-width: 1920px;
@@ -66,9 +66,6 @@ body {
   margin: 15px 35px 0 0;
 }
 /* main */
-/* main {
-  min-height: 100%;
-} */
 .main-wrap {
   height: 75px;
 }
@@ -133,7 +130,7 @@ body {
 /* sectoin text */
 .main-down {
   width: 1160px;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 .text-line {
   border: 10px solid #000000;
@@ -170,6 +167,7 @@ footer {
   justify-content: center;
   background-color: black;
   font-family: var(--ffr-roboto);
+  width: 100%;
 }
 .footer-container {
   display: flex;
