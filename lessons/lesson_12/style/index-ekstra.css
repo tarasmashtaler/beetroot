@@ -41,12 +41,6 @@ body {
 .navigation-logo {
   margin-right: 40px;
 }
-.navigation-items a:nth-child(1) {
-  margin-right: 5px;
-}
-.navigation-items span {
-  margin-right: 10px;
-}
 .navigation-items a {
   text-decoration: none;
 }
