@@ -1,6 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* css for body */
 body {
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(99, 99, 134);
 }
 /* css for header */
@@ -12,6 +17,10 @@ p a,
 em {
   color: blueviolet;
 }
+/* MAIN PART */
+main {
+  margin: 50px;
+}
 /* link in the list */
 li a {
   color: rgb(21, 148, 32);
@@ -21,6 +30,28 @@ li a:hover {
   color: blueviolet;
 }
 /* font size span */
-span {
-  font-size: 18px;
+li span {
+  font-size: 22px;
+}
+/*footer*/
+/* fonts */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  color: white;
+  font-style: italic;
 }
