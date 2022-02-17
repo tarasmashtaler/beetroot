@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="./../../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../../style/normalize.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Lesson_13(Методологія БЕМ)</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header__wrap">
+        <div class="header-logo">
+          <img src="./assets/images/Bitmap.svg" alt="LOGO" class="header-logo__img"/>
+          <h1 class="header-logo__title">Productly</h1>
+        </div>
+        <div class="header-right">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__link"><a href=""><span>Product</span></a></li>
+              <li class="navigation__link"><a href=""><span>Customers</span></a></li>
+              <li class="navigation__link"><a href=""><span>Pricng</span></a></li>
+              <li class="navigation__link"><a href=""><span>Resources</span></a></li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button type="button" class="header__button"><span>Sign In</span></button>
+            <button type="button" class="header__button--orange"><span>Sign Up</span></button>
+          </div>
+        </div>
+      </div> 
+    </header>
+    <!-- Design-->
+    <section class="design">
+      <div class="container design__wrap">
+        <div class="design__block">
+          <h2 class="design__title">The Design Thinking superpowers</h2>
+          <p class="design__description">
+            Tools, tutorials, design and innovation experts, all in one place!
+            The most intuitive way to imagine your next user experience.
+          </p>
+          <div class="design__buttons">
+            <button type="button" class="button--orange"><span>Get started</span></button>
+            <a class="design__link"
+              href="https://www.youtube.com/watch?v=iPV5GKeHyV4"
+              target="_blank"
+              ><img class="design__img"
+                src="/assets/images/Triangle.svg"
+                alt="triangle"
+              /><span>Watch the Video</span></a
+            >
+          </div>
+        </div>
+        <div class="design__image">
+          <img src="./assets/images/image.svg" alt="people"/>
+          <img src="./assets/images/Oval1.svg" alt="oval" />
+        </div>
+      </div>
+    </section>
+    <!-- design tools -->
+    <section class="design-tools">
+      <div class="container design-tools__wrap"> 
+        <h3 class="design-tools__title">We design tools to unveil your superpowers</h3>
+        <div class="design-tools__cards">
+          <div class="design-tools__card">
+            <img src="./assets/images/icon.svg" alt="icon" class="card__img"/>
+            <h4 class="card__title">First click tests</h4>
+            <p class="card__subtitle">While most people enjoy casino gambling,</p>
+          </div>
+          <div class="design-tools__card">
+            <img src="./assets/images/icon1.svg" alt="icon1" class="card__img"/>
+            <h4 class="card__title">Design surveys</h4>
+            <p class="card__subtitle">Sports betting, lottery and bingo playing for the fun</p>
+            </div>
+          <div class="design-tools__card">
+            <img src="./assets/images/icon2.svg" alt="icon2" class="card__img"/>
+            <h4 class="card__title">Preference tests</h4>
+            <p class="card__subtitle">The Myspace page defines the individual.</p>
+          </div>
+          <div class="design-tools__card">
+            <img src="./assets/images/icon3.svg" alt="icon3" class="card__img"/>
+            <h4 class="card__title">Five second tests</h4>
+            <p class="card__subtitle">Personal choices and the overall personality of the person.</p>
+          </div>
+        </div >
+        <button type="buton" class="button--orange"><span>SIGN UP NOW</span></button>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer__border"></div>
+      <div class="container footer__wrap" >
+        <img class="footer__img" src="./assets/images/Bitmap.svg" alt="LOGO" />
+        <img class="footer__img" src="./assets/images/Productly.svg" alt="Productly"/>
+        <div class="footer__blocks">
+          <div class="block__left">
+            <form class="footer__navigation">
+              <ul class="navigation__list">
+                <li class="navigation__link"><a href=""><span>Blog</span></a></li>
+                <li class="navigation__link"><a href=""><span>About Us</span></a></li>
+                <li class="navigation__link"><a href=""><span>Contact</span></a></li>
+                <li class="navigation__link"><a href=""><span>FAQ</span></a></li>
+              </ul>
+            </form>
+          </div>
+          <div class="block__center">
+            <form class="footer-nav">
+              <ul class="navigation__list">
+                <li class="navigation__link"><a href=""><span>Disclaimer</span></a></li>
+                <li class="navigation__link"><a href=""><span>Financing</span></a></li>
+                <li class="navigation__link"><a href=""><span>Privacy Policy</span></a></li>
+                <li class="navigation__link"><a href=""><span>Terms of Service</span></a></li>
+              </ul>
+            </form>
+          </div>
+          <div class="block__right">
+            <input type="text" value="" class="right__input"><br>
+            <button type="button"><span class="right__button">Sign up Now</span></button>
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>
