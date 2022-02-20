@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="./assets/image/favicon.ico" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
                   <div class="form__item-row">
                     <div class="form__item">
                       <label for="" class="form-label">First Name</label>
-                      <input type="text" class="form-input form-input--blue">
+                      <input type="text" class="form-input">
                       <span class="form-error">Error message!!!</span>
                     </div>
                     <div class="form__item">
@@ -55,8 +55,8 @@
                     </div>
                   </div>
                   <div class="form__item--big">
-                    <label for="" class="form-label">E-mail</label>
-                    <input type="email" name="" id="" class="form-input--big">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-input--big">
                     <div class="form__item--hint">We'll never share your email with anyone else.</div>
                   </div>
                   <div class="form__radio">
@@ -71,22 +71,23 @@
                   </div>
                   <div class="form__item-row">
                     <div class="form__item">
-                      <label for="" class="form-label">Country</label>
-                      <select name="" id="" class="form-select">
+                      <label for="country" class="form-label">Country</label>
+                      <select name="country" id="country" class="form-select">
                         <option value="Select" selected class="option"><span>Select</span></option>
-                        <option value="Київ">Київ</option>
-                        <option value="Львів">Львів</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Israel">Israel</option>
+                        <option value="USA">USA</option>
                       </select>
                       <span class="form-error hidden">Error message!!!</span>
                     </div>
                     <div class="form__item">
-                      <label for="" class="form-label">City</label>
-                      <input type="text" class="form-input">
+                      <label for="city" class="form-label">City</label>
+                      <input type="text" id="city" name="city" class="form-input">
                       <span class="form-error hidden">Error message!!!</span>
                     </div>
                   </div>
                   <div class="form__item--big">
-                    <input type="email" name="" id="" class="form-input--big">
+                    <input type="text" name="coment" id="coment" class="form-input--big">
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
                   <div class="form__confirm">
@@ -134,8 +135,8 @@
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
                   <div class="form__item">
-                    <label for="" class="form-label">E-mail</label>
-                    <input type="text" class="form-input">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input">
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
                 </div> 
@@ -144,8 +145,9 @@
                     <label for="" class="form-label">Country</label>
                     <select name="" id="" class="form-select">
                       <option value="Select" selected class="option"><span>Select</span></option>
-                      <option value="Київ">Київ</option>
-                      <option value="Львів">Львів</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Israel">Israel</option>
+                      <option value="USA">USA</option>
                     </select>
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
@@ -162,13 +164,14 @@
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
                   <div class="form__item">
-                    <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-input">
+                    <label for="tel" class="form-label">Phone Number</label>
+                    <input type="tel" name="tel" id="tel" class="form-input">
                     <span class="form-error hidden">Error message!!!</span>
+                    
                   </div>
                 </div> 
                 <div class="form__item--small">
-                  <input type="email" name="" id="" class="form-input--small">
+                  <input type="text" name="coment-small" id="coment-small" class="form-input--small">
                   <span class="form-error hidden">Error message!!!</span>
                 </div>
               </div>

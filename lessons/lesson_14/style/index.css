@@ -12,8 +12,8 @@ h1 {
   --c-balck: #1c1c1c;
   --c-blue: #007bff;
   --c-grey2: #969696;
-  --c-gray-3: #F2F2F2;
-  --c-white: #FFFFFF;
+  --c-gray-3: #f2f2f2;
+  --c-white: #ffffff;
 }
 /*  global fonts */
 body {
@@ -49,7 +49,7 @@ body {
 }
 /* section */
 .section__wrap {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 50px 60px;
 }
 .container {
@@ -63,8 +63,9 @@ body {
   justify-content: space-between;
 }
 /* block-left */
-.form__block-left, .form__block-right {
-  background: #FFFFFF;
+.form__block-left,
+.form__block-right {
+  background: #ffffff;
 }
 .form__blocks > div {
   width: 100%;
@@ -92,6 +93,9 @@ body {
   letter-spacing: -0.2px;
   display: block;
 }
+/* input:focus {
+  border: 1px solid #007bff;
+} */
 .form-input,
 .form-select {
   width: 245px;
@@ -100,10 +104,15 @@ body {
   border: 1px solid #e4e4e4;
   border-radius: 6px;
 }
-.form-input--blue {
-  border: 1px solid #007bff;
-  border-radius: 6px;
+input:focus {
+  outline: 0;
+  border: 1px solid #007bff; 
 }
+select:focus {
+  outline: 0;
+  border: 1px solid #007bff; 
+}
+
 .form-error {
   position: absolute;
   left: 0;
