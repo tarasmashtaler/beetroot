@@ -1,5 +1,21 @@
-@use "global";
-@use "fonts";
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*  global fonts */
+body {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+h1 {
+  margin: 0;
+}
+
 /* css for home page */
 .header-home {
   background: #1a0606;

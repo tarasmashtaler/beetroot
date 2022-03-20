@@ -1,14 +1,10 @@
-@use "global";
-@use "fonts";
+@import "global";
+@import "fonts";
 
 $c-black: #16133d;
 $c-gray: #7690a8;
 $c-white: #f2f2f2;
 $c-green: #3db370;
-
-$Quicksand: "Quicksand", sans-serif;
-$Roboto: "Roboto", sans-serif;
-$NunitoSans: "Nunito Sans", sans-serif;
 
 /* css for home page */
 .header-home {
@@ -26,6 +22,7 @@ $NunitoSans: "Nunito Sans", sans-serif;
 }
 h1 {
   margin: 0;
+
 }
 .header__nav {
   margin-right: 20px;
