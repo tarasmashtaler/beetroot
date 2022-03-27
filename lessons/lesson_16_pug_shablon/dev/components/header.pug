@@ -1,0 +1,10 @@
+mixin header()
+  header.header
+    .header__wrapper 
+      .header__logo
+        span LOGO
+      .header__navigation
+        +navigation()
+      .header__buttons 
+        +button({ text: 'Some text 1', type: 'submit' })
+        +button()

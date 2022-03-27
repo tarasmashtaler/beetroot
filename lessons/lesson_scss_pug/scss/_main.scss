@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  // Selection
+  &::selection {
+    background-color: rgba($c-primary, 0.3);
+  }
+
+  // Custom Scroll
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba($c-primary, 0.8);
+    background-color: rgba($c-primary, 0.3);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 3px rgba($c-primary, 0.8);
+    background-color: $c-primary;
+    border-radius: 10px;
+    outline: none;
+  }
+}
+
+body {
+  font-size: $fs-base + px;
+  font-family: $f-base;
+  color: $c-black-base;
+}
+
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+
+  &:not(.has-stroke) {
+    stroke-width: 0;
+  }
+}
+
+// TODO
+.app {
+  @include absolutelyCenter;
+  // @include size(100);
+  // font-size: em(34);
+}

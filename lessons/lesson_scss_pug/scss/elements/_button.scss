@@ -1,0 +1,17 @@
+.button {
+  background-color: $c-primary;
+  padding: 5px 10px;
+  color: $c-white;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+
+  &--blue {
+    background-color: $c-info;
+  }
+
+  &--black {
+    background-color: $c-black;
+    padding: 100px;
+  }
+}

@@ -1,0 +1,31 @@
+.header {
+  background-color: $c-black;
+  position: fixed;
+  color: $c-white;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+  }
+
+  &__logo {
+    color: yellow;
+    font-size: 50px;
+    line-height: 1;
+
+    &--green {
+      color: green;
+    }
+  }
+
+  &__buttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+}

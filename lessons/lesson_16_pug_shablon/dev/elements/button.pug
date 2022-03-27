@@ -1,0 +1,8 @@
+mixin button(args)
+  //- Функціонал
+  - const text = args ? args.text : 'Default text';
+  - const type = args ? args.type : 'button';
+
+  //- Контент
+  button(type=type).button
+    span= text

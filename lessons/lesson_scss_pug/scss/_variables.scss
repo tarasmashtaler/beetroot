@@ -1,0 +1,23 @@
+// * COLORS
+$c-black: #000;
+$c-black-base: #2c2c2c;
+$c-white: #fff;
+$c-default: #888888;
+// $c-portland-orange: #F96332;
+$c-primary: #f96332;
+$c-info: #2ca8ff;
+
+// * Font
+$f-base: 'Montserrat', sans-serif;
+
+// * Font size
+$fs-base: 16;
+
+// * Cubic bezies
+$cb-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $cb-normal;
+
+// * Box Shadow
+$bs-normal: 0 0 10px 25px rgba($c-black, 0.3);
