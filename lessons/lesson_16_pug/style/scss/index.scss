@@ -2,6 +2,7 @@
 @import "variables";
 @import "global";
 @import "fonts";
+@import "mixins";
 
 /* css for home page */
 
@@ -116,9 +117,10 @@ h1 {
   }
 }
 .item__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include center-alignment;
   width: 65px;
   height: 65px;
   border: 1px solid rgba(21, 101, 216, 0.1);
