@@ -160,7 +160,7 @@ h1 {
   border: 1px solid #3db370;
 }
 
-.block__item:hover svg path {
+.block__item:hover svg {
   stroke: #3db370;
 }
 
@@ -178,6 +178,11 @@ h1 {
   height: 65px;
   border: 1px solid rgba(21, 101, 216, 0.1);
   border-radius: 16px;
+}
+
+.item__svg svg {
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .item__title {

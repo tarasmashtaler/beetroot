@@ -110,7 +110,7 @@ h1 {
   &:hover {
     border: 1px solid $c-green;
 
-    svg path {
+    svg {
       stroke: $c-green;
     }
   }
@@ -123,6 +123,10 @@ h1 {
   height: 65px;
   border: 1px solid rgba(21, 101, 216, 0.1);
   border-radius: 16px;
+  svg {
+    max-width: 60px;
+    max-height: 60px;
+  }  
 }
 .item__title {
   margin-top: 30px;
