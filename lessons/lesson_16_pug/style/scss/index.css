@@ -242,6 +242,7 @@ h1 {
   margin-right: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .footer__icon:hover {
