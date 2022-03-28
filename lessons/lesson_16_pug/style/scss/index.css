@@ -181,8 +181,8 @@ h1 {
 }
 
 .item__svg svg {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 32px;
+  max-height: 32px;
 }
 
 .item__title {
