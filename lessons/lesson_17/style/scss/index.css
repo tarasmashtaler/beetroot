@@ -18,9 +18,26 @@ h1 {
   margin: 0;
 }
 
+.header-home {
+  background: #1a0606;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.header-home a {
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
 header {
-  background-color: white;
-  padding-top: 100px;
+  height: 115px;
 }
 
 header .navigation__list {
@@ -42,7 +59,29 @@ header .navigation__list {
   padding: 0 10px;
 }
 
+.header-fixed {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 .header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 85px;
+  background-color: white;
+}
+
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +105,7 @@ header .navigation__list {
 
 .header__nav li {
   list-style-type: none;
-  margin-right: 50px;
+  margin-right: 40px;
   position: relative;
 }
 
@@ -99,6 +138,25 @@ header .navigation__list {
   bottom: -6px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.button-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 40px;
+  border: none;
+  background-color: white;
+}
+
+.button-header:hover {
+  opacity: 0.7;
 }
 
 section {
@@ -205,12 +263,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -241,15 +293,22 @@ footer {
   margin: 0;
 }
 
-tel, email {
+.footer__need a {
   margin-top: 30px;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.1em;
   color: #000000;
+  text-decoration: none;
 }
 
-email {
+.footer__need a:last-child {
   margin-top: 15px;
+}
+
+.footer__need a:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=index.css.map */

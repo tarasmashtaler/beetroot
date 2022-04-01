@@ -3,12 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 /*  global fonts */
 body {
   font-size: $fs-16;
   color: $c-gray;
   font-family: $Lato;
+  
 }
 h1 {
   margin: 0;

@@ -1,13 +1,26 @@
-
 @import "fonts";
 @import "variables";
 @import "global";
 @import "mixins";
 
+// HEADER-BEETROOT
+.header-home {
+  background: rgb(26, 6, 6);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  a {
+    color: $c-white;
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+}
+
 // HEADER
 header {
-  background-color: $c-white;
-  padding-top: 100px;
+  height: 115px;
+  
   .navigation__list {
     @include flex-center;
   }
@@ -17,12 +30,18 @@ header {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
-}  
+}
+.header-fixed {
+  @include position-fixed;
+}
 .header {
-  &__wrap{
+  &__wrap {
     @include flex-sb;
+    padding-top: 85px;
+    background-color: $c-white;
   }
-  &__nav{
+  &__nav {
+    @include flex-sb;
     span {
       font-size: $fs-12;
       line-height: 16px;
@@ -32,24 +51,24 @@ header {
       padding: 5px;
       color: $c-black;
     }
-    li{
+    li {
       list-style-type: none;
-      margin-right: 50px;
+      margin-right: 40px;
       position: relative;
-      &:last-child{
+      &:last-child {
         margin: 0;
       }
     }
-    
+
     img {
       cursor: pointer;
       padding: 5px;
     }
   }
 }
-.navigation__link{
+.navigation__link {
   transition: all 0.3s;
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 }
@@ -64,12 +83,23 @@ header {
   bottom: -6px;
   transform: translateX(-50%);
 }
+.button-header {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding-left: 40px;
+  border: none;
+  background-color: $c-white;
+  &:hover {
+    opacity: 0.7;
+  }
+}
 
 // ABOUT
 section {
   padding: 130px 0;
 }
-h1{
+h1 {
   font-size: $fs-48;
   line-height: 64px;
   letter-spacing: 0.05em;
@@ -79,7 +109,7 @@ h1{
 .about {
   &__wrap {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
   }
   &__right {
     width: 100%;
@@ -123,7 +153,7 @@ h1{
   margin-top: 80px;
   transition: all 0.3s;
   cursor: pointer;
-  span{
+  span {
     font-size: $fs-16;
     line-height: 28px;
     letter-spacing: 0.1em;
@@ -134,25 +164,25 @@ h1{
 }
 
 // FOOTER
-footer{
+footer {
   background-color: $c-grayf;
   padding: 130px 0;
 }
 .footer {
-  &__wrap{
+  &__wrap {
     @include flex-sb;
     align-items: flex-end;
   }
-  &__need{
-    @include flex-sb;
+  &__need {
+    display: flex;
     flex-direction: column;
   }
-  &__copy{
+  &__copy {
     font-size: $fs-12;
     line-height: 20px;
     letter-spacing: 0.1em;
   }
-  &__nav{
+  &__nav {
     span {
       font-size: $fs-16;
       line-height: 26px;
@@ -161,22 +191,29 @@ footer{
       padding: 5px;
       color: $c-black;
     }
-    li{
+    li {
       list-style-type: none;
       margin-top: 25px;
-      &:first-child{
+      &:first-child {
         margin: 0;
       }
     }
-  }  
-}  
-tel,email{
+  }
+}
+.footer__need {
+  a{
   margin-top: 30px;
   font-size: $fs-16;
   line-height: 28px;
   letter-spacing: 0.1em;
   color: $c-black;
-}
-email{
-  margin-top: 15px;
+  text-decoration: none;
+    &:last-child {
+      margin-top: 15px;
+    }
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.3s;
+    }
+  }
 }
