@@ -3,14 +3,14 @@
 include ./dev/Components/header
 include ./dev/Components/header-beetroot
 include ./dev/Components/header-navigation
-include ./dev/Components/about
+include ./dev/Components/section
 include ./dev/Components/footer
 include ./dev/Components/footer-navigation
 
 //- Elements
 
 include ./dev/Elements/logo
-include ./dev/Elements/button
+//- include ./dev/Elements/button
 include ./dev/Elements/button-header
 
 
@@ -28,5 +28,5 @@ html(lang="en")
 	body
 		//- +header-beetroot
 		+header
-		h1 Blog
+		+section
 		+footer
