@@ -1,0 +1,10 @@
+mixin form()
+  form
+    .form__item
+      label(for="Categories" class="form__label") Categories:
+      .form__item-select 
+        select(name="Categories" id="Categories" class="form__select")
+          <option value="Select" selected class="option"><span>Interaction Design3</span></option>
+          <option value="Select" selected class="option"><span>Interaction Design2</span></option>
+          <option value="Select" selected class="option"><span>Interaction Design</span></option>
+        span(class="form-error hidden") Error message!!!  
