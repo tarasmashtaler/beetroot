@@ -4,11 +4,13 @@ mixin footer()
       .footer__wrap
         .footer__need
           h1 Need a project?
-          a(href="tel:+2395550108") (239) 555-0108
-          a(href="mailto:tanya.hill@example.com") tanya.hill@example.com
+          .footer__contact-details
+            a(href="tel:+2395550108") (239) 555-0108
+            a(href="mailto:tanya.hill@example.com") tanya.hill@example.com
         .footer__nav
           +footer-navigation
         .footer__copy
           span © Copyright Manifest Theme.
           br
           | Allrights reserved
+  script(src="../../js/common.js")

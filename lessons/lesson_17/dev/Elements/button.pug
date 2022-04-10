@@ -1,4 +1,5 @@
-mixin button()
-  button.button.blog
-    span Resume      
+mixin button(arguments)
+  //- button.button.blog.monica
+  button(class="button " + arguments.class)
+    span= arguments.button      
     img(src="./assets/Arrow.svg")    

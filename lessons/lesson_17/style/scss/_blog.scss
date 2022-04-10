@@ -31,7 +31,8 @@ section {
   }
 }
 .banner__text {
-  &-tech, time {
+  &-tech,
+  time {
     color: $c-gray78;
     line-height: 26px;
     letter-spacing: 0.1em;
@@ -41,7 +42,7 @@ section {
     font-size: $fs-24;
     line-height: 38px;
     font-family: $RHD;
-  }  
+  }
   &-content {
     margin-top: 50px;
     line-height: 28px;
@@ -55,13 +56,13 @@ section {
       letter-spacing: 0.1em;
       margin-right: 25px;
       text-decoration: none;
-        &:last-child {
-          margin-right: 0;
-        }
+      &:last-child {
+        margin-right: 0;
+      }
       &:hover {
         color: $c-gray;
       }
-    } 
+    }
   }
 }
 // FORM
@@ -76,7 +77,7 @@ section {
     line-height: 28px;
     letter-spacing: 0.1em;
     color: $c-black;
-  }  
+  }
   select {
     width: 100%;
     max-width: 415px;
@@ -98,10 +99,11 @@ section {
   &-select {
     position: relative;
     width: 100%;
-  }  
+  }
 }
+
 .hidden {
-  // display: none;
+  display: none;
 }
 
 // Section-img
@@ -111,22 +113,21 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 50px;
-
 }
 .section__item {
   &-img {
     width: 100%;
     max-width: 540px;
-  }  
-  &:nth-child(2n+1) {
-      margin-top: 125px;
-    }
+  }
+  &:nth-child(2n + 1) {
+    margin-top: 125px;
+  }
   &:nth-child(2n) {
-      margin-top: 125px;
-    }  
-    img {
-      width: 100%;
-    }
+    margin-top: 125px;
+  }
+  img {
+    width: 100%;
+  }
   &-description {
     display: flex;
     justify-content: space-between;
@@ -149,13 +150,14 @@ section {
     letter-spacing: 0.05em;
     margin-top: -15px;
   }
-  span, time {
+  span,
+  time {
     color: $c-gray78;
     font-size: $fs-12;
     line-height: 20px;
     letter-spacing: 0.1em;
-  } 
-}  
+  }
+}
 // Section-button
 body .blog {
   display: block;

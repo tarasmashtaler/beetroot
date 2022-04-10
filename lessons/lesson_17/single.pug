@@ -3,18 +3,20 @@
 include ./dev/Components/header
 include ./dev/Components/header-beetroot
 include ./dev/Components/header-navigation
-include ./dev/Components/about
+include ./dev/Components/section
+include ./dev/Components/single
 include ./dev/Components/footer
 include ./dev/Components/footer-navigation
-
-
+include ./dev/Components/form
+include ./dev/Components/form-monika
+include ./dev/Components/comments-monika
 
 //- Elements
 
 include ./dev/Elements/logo
 include ./dev/Elements/button
 include ./dev/Elements/button-header
-include ./dev/Elements/burger
+include ./dev/Elements/section-img
 
 //- Page
 doctype html
@@ -25,9 +27,9 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		title Респонсивний вебдизайн (RWD)
 		link(rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon")
+		link(rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
 		link(rel="stylesheet" href="./style/scss/index.css")
 	body
-		//- +header-beetroot
 		+header
-		+about
+		+single
 		+footer
