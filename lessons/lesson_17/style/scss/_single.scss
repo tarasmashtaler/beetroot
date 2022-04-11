@@ -24,7 +24,7 @@
 
 // Baner img
 
-.single__baner  {
+.single__baner {
   margin-top: 65px;
   width: 100%;
   img {
@@ -109,7 +109,6 @@ ul.monika__list {
       margin-bottom: 0;
     }
   }
-
 }
 
 // Targs blok
@@ -120,16 +119,17 @@ ul.monika__list {
   h3 {
     margin-right: 15px;
     color: $c-black;
-    font-weight: normal;  
+    font-weight: normal;
   }
-  span,h3 {
+  span,
+  h3 {
     line-height: 28px;
     letter-spacing: 0.1em;
   }
-}  
+}
 .monica__line {
   margin-top: 15px;
-  border: 1px solid #F4F4F4;
+  border: 1px solid #f4f4f4;
 }
 .monica__content h2 {
   margin-top: 95px;
@@ -159,7 +159,7 @@ ul.monika__list {
     flex-direction: column;
     width: 100%;
     max-width: 215px;
-    border-bottom: 1px solid $c-black ;
+    border-bottom: 1px solid $c-black;
   }
 }
 .form__chek {
@@ -174,9 +174,9 @@ ul.monika__list {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;    
+  justify-content: center;
   border-bottom: 1px solid $c-black;
-  textarea { 
+  textarea {
     border: none;
   }
 }
