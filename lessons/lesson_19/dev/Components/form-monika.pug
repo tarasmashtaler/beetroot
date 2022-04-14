@@ -1,0 +1,26 @@
+mixin form-monika()
+  form(action="#" method="post")
+    .form__wrap
+      .form__items
+        .form__items-details
+          label(for="name") Name*
+          input(type="text" id="name" name="name")
+        .form__items-details
+          label(for="mail") Email*
+          input(type="email" id="mail" name="mail")
+        .form__items-details
+          label(for="web") Website
+          input(type="text" id="web" name="web")   
+      .form__chek
+        input(type="checkbox" id="chek" name="chek")
+        label(for="chek") Save my name, email, and website in this browser for the next time I comment
+      .form__comment
+        label(for="comment") Comment*
+        textarea(id="comment" name="comment") Hi there ...
+      +button({
+        button:'Post',
+        class:'monica'
+      })    
+
+
+

@@ -1,0 +1,54 @@
+mixin section()
+  section
+    .container
+      h1 Blog
+      .banner__wrap
+        .banner__img
+          img(src="../../assets/baner.jpg")   
+        .banner__text
+          .banner__text-tech Technology, Interface Design
+          h2
+            |Using UX Design to Build a
+            br 
+            |Sustainable Future
+          time 6 May, 2020
+          .banner__text-content
+            |Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
+            img(src="../../assets/Arrow 1.png")
+          .banner__text-figures
+            a(href="#")
+              span 1
+            a(href="#")
+              span 2
+            a(href="#")  
+              span 3
+      +form
+      .section__content
+        +section-img({
+          img:"blog1.jpg",
+          span:'Interface Design',
+          h2:'UX traffic light colours',
+          text:'UI has to make a huge visual difference between warning, an alert and a success.'
+        })
+        +section-img({
+          img:"blog2.jpg",
+          span:'Visual Design, Technology', 
+          h2:'Understanding users by going beyond personas, demographics, and affinity groups',
+          text:'Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define what larger demographic or affinity groups—especially diverse ones—might want'
+        })
+        +section-img({
+          img:"blog3.jpg",
+          span:'Interface Design', 
+          h2:'Mentorship Match — How a simple LinkedIn feature can boost diversity',
+          text:'LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand'
+        })
+        +section-img({
+          img:"blog4.jpg",
+          span:'Visual Design', 
+          h2:'Creativity vs. UX',
+          text:'Is it possible to create a delightful user experience without following best UX practices?'
+        })
+      +button({
+        button:'Load More',
+        class:'blog'
+      })       

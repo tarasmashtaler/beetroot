@@ -1,0 +1,33 @@
+//- Components
+
+include ./dev/Components/header
+include ./dev/Components/header-beetroot
+include ./dev/Components/header-navigation
+include ./dev/Components/about
+include ./dev/Components/footer
+include ./dev/Components/footer-navigation
+
+
+
+//- Elements
+
+include ./dev/Elements/logo
+include ./dev/Elements/button
+include ./dev/Elements/button-header
+include ./dev/Elements/burger
+
+//- Page
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Респонсивний вебдизайн (RWD)
+		link(rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon")
+		link(rel="stylesheet" href="./style/scss/index.css")
+	body
+		//- +header-beetroot
+		+header
+		+about
+		+footer
