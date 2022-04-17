@@ -9,67 +9,83 @@ section {
   justify-content: space-between;
   margin-top: 100px;
   flex-wrap: wrap;
+
   @include media("<=desktop") {
     // flex-direction: column;
     // transition: 0.3s all;
   }
 }
+
 .banner__img {
   width: 100%;
   max-width: 540px;
+
   img {
     width: 100%;
   }
 }
+
 .banner__text {
   width: 100%;
   max-width: 540px;
+
   .banner__text-tech {
     margin-top: 50px;
   }
+
   h2 {
     margin-top: 25px;
   }
+
   time {
     margin-top: 15px;
     display: block;
   }
 }
+
 .banner__text {
+
   &-tech,
   time {
     color: $c-gray78;
     line-height: 26px;
     letter-spacing: 0.1em;
   }
+
   h2 {
     color: $c-black;
     font-size: $fs-24;
     line-height: 38px;
     font-family: $RHD;
   }
+
   &-content {
     margin-top: 50px;
     line-height: 28px;
     letter-spacing: 0.1em;
   }
+
   &-figures {
     margin-top: 95px;
+
     a {
       color: $c-black;
       line-height: 28px;
       letter-spacing: 0.1em;
       margin-right: 25px;
       text-decoration: none;
+
       &:last-child {
         margin-right: 0;
       }
+
       &:hover {
         color: $c-gray;
       }
     }
   }
 }
+
 // FORM
 .form__item {
   width: 100%;
@@ -77,12 +93,14 @@ section {
   display: flex;
   align-items: baseline;
   margin-top: 115px;
+
   label {
     margin-right: 40px;
     line-height: 28px;
     letter-spacing: 0.1em;
     color: $c-black;
   }
+
   select {
     width: 100%;
     max-width: 415px;
@@ -94,6 +112,7 @@ section {
     padding-bottom: 20px;
     // position: relative;
   }
+
   span {
     position: absolute;
     left: 0;
@@ -101,6 +120,7 @@ section {
     font-size: 12px;
     color: red;
   }
+
   &-select {
     position: relative;
     width: 100%;
@@ -119,24 +139,30 @@ section {
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
 .section__item {
   &-img {
     width: 100%;
     max-width: 540px;
   }
+
   &:nth-child(2n + 1) {
     margin-top: 125px;
   }
+
   &:nth-child(2n) {
     margin-top: 125px;
   }
+
   img {
     width: 100%;
   }
+
   &-description {
     display: flex;
     justify-content: space-between;
   }
+
   h2 {
     width: 100%;
     max-width: 540px;
@@ -148,6 +174,7 @@ section {
     color: $c-black;
     font-family: $RHD;
   }
+
   &-text {
     width: 100%;
     max-width: 540px;
@@ -155,6 +182,7 @@ section {
     letter-spacing: 0.05em;
     margin-top: -15px;
   }
+
   span,
   time {
     color: $c-gray78;
@@ -163,6 +191,7 @@ section {
     letter-spacing: 0.1em;
   }
 }
+
 // Section-button
 body .blog {
   display: block;
@@ -170,6 +199,7 @@ body .blog {
   margin: 70px auto 0;
   width: 180px;
   background-color: $c-gray;
+
   img {
     display: none;
   }

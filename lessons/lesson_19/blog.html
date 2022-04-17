@@ -39,7 +39,12 @@
       <div class="container">
         <h1>Blog</h1>
         <div class="banner__wrap">
-          <div class="banner__img"><img src="./assets/baner.jpg"/></div>
+          <div class="banner__img">
+            <picture>
+              <source srcset="./assets/baner1.jpg" media="(max-width: 1024px)"/>
+              <source srcset="./assets/baner.jpg"/><img src="./assets/baner.jpg" alt="Baner"/>
+            </picture>
+          </div>
           <div class="banner__text">
             <div class="banner__text-tech">Technology, Interface Design</div>
             <h2>Using UX Design to Build a<br/>Sustainable Future</h2>

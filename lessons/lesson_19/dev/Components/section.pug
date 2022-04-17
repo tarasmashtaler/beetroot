@@ -4,7 +4,11 @@ mixin section()
       h1 Blog
       .banner__wrap
         .banner__img
-          img(src="./assets/baner.jpg")   
+          picture
+            source(srcset="./assets/baner1.jpg" media="(max-width: 1024px)")
+            source(srcset="./assets/baner.jpg" )
+            img(src="./assets/baner.jpg" alt="Baner")
+          //- img(src="./assets/baner.jpg")   
         .banner__text
           .banner__text-tech Technology, Interface Design
           h2
