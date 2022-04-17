@@ -1,0 +1,66 @@
+// * Font Families
+$ff-main: 'Roboto', sans-serif;
+
+
+// * Font Sizes
+// Text font sizes
+$fs-job-title: 12px;
+$fs-base: 16px;
+$fs-text-large: 18px;
+$fs-label: 24px;
+// Headings font sizes
+$fs-heading-one: 56px;
+$fs-heading-two: 48px;
+$fs-heading-three: 36px;
+$fs-heading-four: $fs-label;
+$fs-heading-five: $fs-text-large;
+$fs-heading-six: $fs-base;
+
+// * Font Weights
+$fw-base: normal;
+$fw-bold: bold;
+$fw-black: 900;
+
+// * Colors
+$c-primary: #1D2130;
+$c-input-dark: #2B2E3C;
+$c-button-dark: #313852;
+$c-blue: #6B7CFF;
+$c-light-violet: #E0E4FC;
+$c-logo: #1E1B1B;
+$c-white: #FFFFFF;
+$c-icon-bg: #F4F5F7;
+$c-arrow-bg: #FFACAC;
+$c-copyright: #888888;
+$c-linear-gradient: linear-gradient(#373FFF, #3ACAF8);
+$c-radial-gradient: radial-gradient(#D798E1, #9BFFA5, #AED3FF, #C9D4EF, #CACFFA);
+
+
+// * Transition
+$t-normal: .35s cubic-bezier(.4,0,.2,1);
+
+// * Media Queries: Breakpoints
+$small: 320px;
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$screen: 1400px;
+$large: 1920px;
+
+// !Media Queries: Examples
+
+// @example scss - With a single set breakpoint
+// /  @include media(">phone") { }
+// /
+// / @example scss - With two set breakpoints
+// /  @include media(">phone", "<=tablet") { } 
+// /
+// / @example scss - With custom values
+// /  @include media(">=358px", "<850px") { } 
+// /
+// / @example scss - With set breakpoints with custom values
+// /  @include media(">desktop", "<=1350px") { } 
+
+
+
+

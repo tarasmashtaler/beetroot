@@ -1,0 +1,9 @@
+mixin navigation(list)
+  - const navClass = "navigation"
+
+  nav(class= navClass) 
+    ul(class= navClass + "__list") 
+      each item in list 
+        li(class= navClass + "__item")
+          a(class= navClass + "__link" src= item.link)= item.text
+
