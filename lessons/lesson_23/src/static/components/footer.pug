@@ -1,0 +1,26 @@
+mixin footer
+  - const footPref = "footer"
+  footer(class= footPref)
+    div.container(class= footPref + '__wrapper')
+      +footer-block
+      div(class= footPref + '__subscribe') 
+        .logo__container
+          +logo("white", "Logo")
+        div(class= footPref + '__newsletter-block')
+          label.newsletter__label(for='newsletter-input') 
+            .newsletter__name Subscribe to our Newsletter
+            .newsletter__input-container
+              input.newsletter__input(type="email" name='newsletter-input' id='newsletter-input' placeholder='Enter your Email')
+              .newsletter__button
+                +button({text:'Subscribe', type: "Submit"})(class='button button--white')
+    div(class= footPref + "__border")
+    .social-media 
+      .social-media__copyright-container 
+        .social-media__copyright © Copyright Finsweet 2022
+      .social-media__networks-container 
+        +iconFooter('Facebook')
+        +iconFooter('Twitter')
+        +iconFooter('Instagram')
+        +iconFooter('LinkedIn')
+
+

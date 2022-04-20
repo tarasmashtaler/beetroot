@@ -6,9 +6,9 @@ let myCity = 'Ivano-frankivsk';
 alert('Привіт, ' + firstName + '!');
 
 // Обчислення віку людини
-const yearNow = 2022;
+const YEAR_NOW = 2022;
 let yearBirthday = prompt('Привіт, який твій рік народження?');
-let result = yearNow - yearBirthday;
+let result = YEAR_NOW - yearBirthday;
 alert('Твій вік: ' + result + ' років!'); 
 
 // Обчислення параметру квадрату
@@ -35,9 +35,9 @@ distCitySpeed = distCitySpeed.toFixed();
 alert('Середня швидкість руху повинна бути не менше ' + distCitySpeed + ' км/год');
 
 // Обмін валют
-const manyDollarEvro = 0.93;
+const MANY_DOLLAR_EVRO = 0.93;
 let manyDollar = prompt('Введіть суму в долларах:');
-let manyEvro = (manyDollarEvro * manyDollar);
+let manyEvro = (MANY_DOLLAR_EVRO * manyDollar);
 manyEvro = manyEvro.toFixed(2);
 alert('Після конвертації валют Ви отримаєте: ' + manyEvro + ' Evro');
 
