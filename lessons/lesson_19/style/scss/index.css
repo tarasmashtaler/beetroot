@@ -944,6 +944,10 @@ header.menu-opened .navigation__list {
   position: relative;
 }
 
+.header__nav li a {
+  text-decoration: none;
+}
+
 .header__nav li:last-child {
   margin: 0;
 }
@@ -1329,6 +1333,10 @@ footer {
 .footer__nav li {
   list-style-type: none;
   margin-top: 25px;
+}
+
+.footer__nav li a {
+  text-decoration: none;
 }
 
 .footer__nav li:first-child {
