@@ -36,7 +36,7 @@ function travelTimeCheck(distance, car, driver){
     console.log("Такого водія не існує!");
     return false;
   } else if(!driverInfo.permission){
-    console.log("Водій не має права керувати дани автомобілем!");
+    console.log("Водій не має права керувати даним автомобілем!");
     return false;
   }
 
