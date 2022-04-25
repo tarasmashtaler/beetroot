@@ -1,88 +1,93 @@
-/* Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску, середня швидкість, обсяг паливного бака, середня витрата палива на 100 км., водії), і наступні функції для роботи з цим об'єктом:
-Висновок на екран з інформацією про автомобіль.
-Додавання водія, який має право керувати автомобілем.
-Заправка автомобіля.
-Підрахунок необхідного часу для подолання переданої відстані з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину, а також потрібно перевіряти чи має право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом). Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки, якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.*/
-let car = {
-  brand: 'Opel',
-  model: 'Astra',
-  year: 2013,
-  avgSpeed: 100,
-  fuelVolume: 56,
-  avgFuel: 4.4,
-  drivers: [
-    {
-      name: 'Taras',
-      permission: true  
-    },
-    {
-      name: 'Yana',
-      permission: false  
-    }
-  ]
+// Напиши всі можливі варіанти створення функцій.
+function firstNumber() {
+  console.log('firstNumber');
 }
-console.log('Висновок на екран з інформацією про автомобіль', car);
-console.log('Додавання водія, який має право керувати автомобілем');
-car.drivers.forEach(function(element) {
-  if(element.permission){
-    console.log(`${element.name} має право керувати`);
-  }
-});
-console.log('Заправка автомобіля: ' + car.fuelVolume + ' л.');
-function travelTimeCheck(distance, car, driver){
-  let driverInfo = car.drivers.find(element => element.name == driver);
+firstNumber();
 
-  if(driverInfo === undefined){
-    console.log("Такого водія не існує!");
+// Створи функцію, яка буде виводити кількість переданих їй аргументів.
+const secondNumber = function (a, b) {
+  console.log('secondNumber', a, b);
+}
+secondNumber(2, 3);
+
+// Напиши функцію, яка приймає 2 числа і повертає :
+// -1, якщо перше число менше, ніж друге; 
+// 1 - якщо перше число більше, ніж друге; 
+// 0 - якщо числа рівні.
+const comparedNumber = function (a, b) {
+  let result = -1;
+  if (a > b) {
+    result = 1;
+  } else if (a == b) {
+    result = 0;
+  }
+  console.log('comparedNumber', result);
+}
+comparedNumber(4, 3);
+
+// Напиши функцію, яка обчислює факторіал переданого їй числа.
+const factorial = function (number) {
+  if (number < 0) {
     return false;
-  } else if(!driverInfo.permission){
-    console.log("Водій не має права керувати даним автомобілем!");
+  } else if (number == 0) {
+    return 1;
+  } else {
+    return number * factorial(number - 1);
+  }
+}
+console.log('factorial', factorial(5));
+
+// Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.
+function threeNumber(one, two, three) {
+  return one.toString() + two.toString() + three.toString();
+}
+console.log('threeNumber', threeNumber(5, 9, 6));
+
+// Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
+function areaRectangle(width, height = null) {
+  if (height === null) {
+    return width * 4;
+  }
+  return width * height;
+}
+console.log('areaRectangle', areaRectangle(5, 6));
+
+// Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
+function findPerfectNumber(number){
+  let sumOfNumbers = 0;
+
+  for(let i = number - 1; i > 0; i--){
+    if(number % i == 0){
+      sumOfNumbers = sumOfNumbers + i;
+    }
+  }
+
+  if(sumOfNumbers == number){
+    return true;
+  } else{
     return false;
   }
+}
 
-  let travelFuelVolume = distance / 100 * car.avgFuel;
-  console.log(travelFuelVolume);
-  if(travelFuelVolume > car.fuelVolume){
-    console.log('Вам необхідна дозапрвка');
+let numberPerfectCheck = findPerfectNumber(28);
+
+if(numberPerfectCheck){
+  console.log('Досконале число');
+} else{
+  console.log('Не досконале число');
+}
+
+// Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
+
+function findPerfectNumberInRange(minNumber, maxNumber){
+  let numberCheck;
+
+  for (let i = minNumber; i < maxNumber; i++) {
+    numberCheck = findPerfectNumber(i);
+    // console.log(numberCheck, i);
+    if (numberCheck){
+      console.log(`Досконале число: ${i}`);
+    }
   }
-  let travelTime = distance / car.avgSpeed;
-  travelTime = travelTime.toFixed();
-  travelTime = +travelTime + (travelTime / 4);
-  console.log(`На поїздку необхідно ${travelTime} годин`); 
-} 
-travelTimeCheck(2000, car, 'Taras');
-
-/* Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
-Для виведення часу на екран.
-Зміни часу на передане кількість секунд.
-Зміни часу на передане кількість хвилин.
-Зміни часу на передане кількість годин.
-Врахуйте, що в останніх 3-х функціях, при зміні однієї частини часу, може змінитися і інша. Наприклад: якщо до часу «20:59:45» додати 30 секунд, то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити можливість того що користувач може передати 150 секунд, або 75 хвилин. */ 
-const currentTime = {
-  hour: 12,
-  minute: 0,
-  second: 0,
-  showTime: function(){
-    return this.hour + ' hour ' + this.minute + ' minute ' + this.second + ' second ';   
-  },
-  changeTime: function(type, time){
-    if(type == 'minutes'){
-      time = time * 60;
-    } else if (type == 'hours'){
-      time = time * 3600;
-    } 
-    
-    let timeInSeconds = (this.hour * 3600) + (this.minute * 60) + this.second;
-    let changedTime = time + timeInSeconds;
-
-    this.hour   = Math.floor(changedTime / 3600); 
-    this.minute = Math.floor((changedTime - (this.hour * 3600)) / 60);
-    this.second = changedTime - (this.hour * 3600) - (this.minute * 60);
-    
-    return this.showTime();  
-  }
-};  
-console.log(currentTime.showTime());
-console.log(currentTime.changeTime('seconds', 600));
-console.log(currentTime.changeTime('minutes', 70));
-console.log(currentTime.changeTime('hours', 2));
+}
+findPerfectNumberInRange(100, 2000)
