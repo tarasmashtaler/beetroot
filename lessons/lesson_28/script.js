@@ -104,7 +104,7 @@ addProductToList({name: 'pineapple', quantity: 5, price: 90});
 addProductToList({name: 'cherry', quantity: 5, price: 55});
 
 // Підрахунок суми всіх продуктів (враховуючи кількість кожного) в списку.
-function totalProductaAmount(){
+function totalProductAmount(){
   let totalAmount = 0;
   shoppingList.forEach((element) => {
     totalAmount = totalAmount + element.quantity * element.price; 
@@ -112,4 +112,38 @@ function totalProductaAmount(){
   })
   return totalAmount;
 }
-console.log(totalProductaAmount());
+console.log(totalProductAmount());
+// Підрахунок суми всіх (не) придбаних продуктів.
+// console.log(shoppingList);
+// змінюю масив для задачі!!!
+shoppingList[0].bought = false;
+shoppingList[3].bought = false;
+shoppingList[2].quantity = 10;
+// console.log(shoppingList);
+function totalProductAmountNot(){
+  let totalAmountNot = 0;
+  shoppingList.forEach((element) => {
+    // console.log(element);
+    if(!element.bought){
+      totalAmountNot += element.quantity * element.price; 
+      console.log(element);
+    }  
+  })
+  return totalAmountNot;
+}
+console.log(totalProductAmountNot());
+
+// Показання продуктів в залежності від суми, (від більшого до меншого / від меншого до більшого, в залежності від параметра функції, який вона приймає)
+function productSortByAmount(direction){
+  if(direction == 'up'){
+    shoppingList.sort(function (a, b) {
+      return a.amount > b.amount ? 1 : -1;
+    });
+  } else if(direction == 'down'){
+    shoppingList.sort(function (a, b) {
+      return a.amount < b.amount ? 1 : -1;
+    });
+  } 
+}
+productSortByAmount('up');
+console.log(shoppingList);
