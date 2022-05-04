@@ -1,0 +1,77 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  margin: 0;
+}
+:root {
+  /* font-family */
+  --ff-Roboto: "Roboto", sans-serif;
+  /* color */
+  --c-black: #16133d;
+  --c-gray: #7690a8;
+  --c-white: #f2f2f2;
+  --c-green: #3db370;
+}
+/*  global fonts */
+body {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: var(--ff-Roboto);
+  color: var(--c-black);
+}
+
+.wrap {
+  padding: 0 50px;
+}
+h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+.todo {
+  margin-bottom: 50px;
+}
+.todo__choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  border-top: 3px solid var(--c-gray);
+  text-align: center;
+  padding: 30px;
+  color: var(--c-green);
+}
+.todo__input {
+  padding-left: 10px;
+  height: 50px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.todo__button {
+  padding: 10px;
+  height: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.todo__button:hover {
+  opacity: 1;
+}
+.todo__list {
+  list-style-type: none;
+}
+.todo__item {
+  cursor: pointer;
+  width: fit-content;
+}
+.todo__item:hover {
+  text-decoration: line-through;
+}
+
+

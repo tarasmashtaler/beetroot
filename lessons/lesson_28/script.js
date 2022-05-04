@@ -3,37 +3,37 @@
 // Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 // Створення списку (не) придбаних продуктів.
 let shoppingList = [
-  { 
+  {
     name: 'apple',
-    quantity: 5, 
+    quantity: 5,
     bought: true,
     price: 10,
     amount: 50
   },
-  { 
+  {
     name: 'pear',
-    quantity: 15, 
+    quantity: 15,
     bought: true,
     price: 20,
     amount: 300
   },
-  { 
+  {
     name: 'orange',
-    quantity: 0, 
+    quantity: 0,
     bought: false,
     price: 40,
     amount: 0
   },
-  { 
+  {
     name: 'mango',
-    quantity: 0, 
+    quantity: 0,
     bought: false,
     price: 75,
     amount: 0
   },
-  { 
+  {
     name: 'cherry',
-    quantity: 0, 
+    quantity: 0,
     bought: false,
     price: 55,
     amount: 0
@@ -46,10 +46,10 @@ shoppingList.sort(function (a, b) {
 console.log(shoppingList);
 
 // Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
-function setBought(productName){
+function setBought(productName) {
   let productIndex = shoppingList.findIndex(element => element.name == productName);
   // console.log(productIndex);
-  if(productIndex == -1){
+  if (productIndex == -1) {
     return false;
   }
   shoppingList[productIndex].bought = true;
@@ -58,10 +58,10 @@ setBought('mango');
 // setBought('orange');
 
 // Створення списку (не) придбаних продуктів.
-let notBoughtProducts = [];   
+let notBoughtProducts = [];
 shoppingList.forEach((element) => {
-  if(!element.bought){
-  notBoughtProducts.push(element);
+  if (!element.bought) {
+    notBoughtProducts.push(element);
   }
 })
 console.log(notBoughtProducts);
@@ -69,11 +69,11 @@ console.log(notBoughtProducts);
 // Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
 
 
-function deleteProductFromList(productName){
+function deleteProductFromList(productName) {
   let newProductsList = [];
 
   shoppingList.forEach((element) => {
-    if(element.name != productName){
+    if (element.name != productName) {
       newProductsList.push(element);
     }
   });
@@ -83,31 +83,31 @@ console.log('Old products list', shoppingList);
 console.log('New products list', deleteProductFromList('orange'));
 
 // Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову. При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
-function amountCalculate(product){
-  return  product.quantity * product.price;
+function amountCalculate(product) {
+  return product.quantity * product.price;
 }
-function addProductToList(product){
+function addProductToList(product) {
   let productIndex = shoppingList.findIndex(element => element.name == product.name);
   console.log(productIndex);
-  if(productIndex == -1){
+  if (productIndex == -1) {
     product['bought'] = true;
-    product['amount'] = amountCalculate(product); 
+    product['amount'] = amountCalculate(product);
     shoppingList.push(product);
-  } else{
+  } else {
     shoppingList[productIndex].quantity += product.quantity;
     shoppingList[productIndex].amount += amountCalculate(product);
     shoppingList[productIndex].bought = true;
   }
   console.log(shoppingList);
 }
-addProductToList({name: 'pineapple', quantity: 5, price: 90});
-addProductToList({name: 'cherry', quantity: 5, price: 55});
+addProductToList({ name: 'pineapple', quantity: 5, price: 90 });
+addProductToList({ name: 'cherry', quantity: 5, price: 55 });
 
 // Підрахунок суми всіх продуктів (враховуючи кількість кожного) в списку.
-function totalProductAmount(){
+function totalProductAmount() {
   let totalAmount = 0;
   shoppingList.forEach((element) => {
-    totalAmount = totalAmount + element.quantity * element.price; 
+    totalAmount = totalAmount + element.quantity * element.price;
     console.log(element);
   })
   return totalAmount;
@@ -120,30 +120,30 @@ shoppingList[0].bought = false;
 shoppingList[3].bought = false;
 shoppingList[2].quantity = 10;
 // console.log(shoppingList);
-function totalProductAmountNot(){
+function totalProductAmountNot() {
   let totalAmountNot = 0;
   shoppingList.forEach((element) => {
     // console.log(element);
-    if(!element.bought){
-      totalAmountNot += element.quantity * element.price; 
+    if (!element.bought) {
+      totalAmountNot += element.quantity * element.price;
       console.log(element);
-    }  
+    }
   })
   return totalAmountNot;
 }
 console.log(totalProductAmountNot());
 
 // Показання продуктів в залежності від суми, (від більшого до меншого / від меншого до більшого, в залежності від параметра функції, який вона приймає)
-function productSortByAmount(direction){
-  if(direction == 'up'){
+function productSortByAmount(direction) {
+  if (direction == 'up') {
     shoppingList.sort(function (a, b) {
       return a.amount > b.amount ? 1 : -1;
     });
-  } else if(direction == 'down'){
+  } else if (direction == 'down') {
     shoppingList.sort(function (a, b) {
       return a.amount < b.amount ? 1 : -1;
     });
-  } 
+  }
 }
 productSortByAmount('up');
 console.log(shoppingList);

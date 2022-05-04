@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonnts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./../../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Lesson №32(Document Object Model (DOM))</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Document Object Model (DOM)</h1>
+      <h2>Завдання!!!</h2>
+      <div class="todo">
+        <div class="todo__choice">
+          <input
+            type="text"
+            class="todo__input"
+            id="js-todo-input"
+            placeholder="Пиши завдання!"
+            value=""
+          />
+          <button type="button" class="todo__button" id="js-todo-button">
+            <span>Зафіксуй задавдання!</span>
+          </button>
+        </div>
+        <ul class="todo__list" id="js-todo-list">
+          <li class="todo__item"><span>1111111111</span></li>
+          <li class="todo__item"><span>2222222222</span></li>
+          <li class="todo__item"><span>3333333333</span></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

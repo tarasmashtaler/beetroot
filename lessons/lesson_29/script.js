@@ -53,39 +53,39 @@ function areaRectangle(width, height = null) {
 console.log('areaRectangle', areaRectangle(5, 6));
 
 // Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
-function findPerfectNumber(number){
+function findPerfectNumber(number) {
   let sumOfNumbers = 0;
 
-  for(let i = number - 1; i > 0; i--){
-    if(number % i == 0){
+  for (let i = number - 1; i > 0; i--) {
+    if (number % i == 0) {
       sumOfNumbers = sumOfNumbers + i;
     }
   }
 
-  if(sumOfNumbers == number){
+  if (sumOfNumbers == number) {
     return true;
-  } else{
+  } else {
     return false;
   }
 }
 
 let numberPerfectCheck = findPerfectNumber(28);
 
-if(numberPerfectCheck){
+if (numberPerfectCheck) {
   console.log('Досконале число');
-} else{
+} else {
   console.log('Не досконале число');
 }
 
 // Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
 
-function findPerfectNumberInRange(minNumber, maxNumber){
+function findPerfectNumberInRange(minNumber, maxNumber) {
   let numberCheck;
 
   for (let i = minNumber; i < maxNumber; i++) {
     numberCheck = findPerfectNumber(i);
     // console.log(numberCheck, i);
-    if (numberCheck){
+    if (numberCheck) {
       console.log(`Досконале число: ${i}`);
     }
   }
