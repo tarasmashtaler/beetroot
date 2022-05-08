@@ -29,26 +29,30 @@
     <div class="wrap">
       <h1>Document Object Model (DOM)</h1>
       <h2>Завдання!!!</h2>
-      <div class="todo">
+      <div class="todo" id="js-todo">
         <div class="todo__choice">
           <input
             type="text"
             class="todo__input"
             id="js-todo-input"
             placeholder="Пиши завдання!"
-            value=""
           />
           <button type="button" class="todo__button" id="js-todo-button">
             <span>Зафіксуй задавдання!</span>
+            <button type="button" class="todo__button js-todo-button">
+              <span>[X]</span>
+            </button>
           </button>
         </div>
         <ul class="todo__list" id="js-todo-list">
-          <li class="todo__item"><span>1111111111</span></li>
-          <li class="todo__item"><span>2222222222</span></li>
-          <li class="todo__item"><span>3333333333</span></li>
         </ul>
       </div>
+      <div class="container">
+        <button type="button" class="todo__button js-todo-button">
+          <span>Показати форму для завдань?</span>
+        </button>
+      </div>
     </div>
-    <script src="./script.js"></script>
+    <script defer type="module" src="./script.js"></script>
   </body>
 </html>

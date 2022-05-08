@@ -29,12 +29,27 @@ body {
   padding: 0 50px;
 }
 h1 {
-  margin: 50px 0;
+  margin: 100px 0;
   text-align: center;
 }
 .todo {
   margin-bottom: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
 }
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .todo__choice {
   display: flex;
   align-items: center;
@@ -73,5 +88,10 @@ h2 {
 .todo__item:hover {
   text-decoration: line-through;
 }
-
-
+.container {
+  display: flex;
+  justify-content: center;
+}
+.playlist {
+  margin-top: 200px;
+}
