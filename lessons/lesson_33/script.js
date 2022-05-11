@@ -35,10 +35,10 @@ function sortTable(headingObject, index) {
 
   mainContentValue.sort(function (a, b) {
     if (a.data[headingObject.name] < b.data[headingObject.name]) {
-      return 1;
+      return headingObject.type == 'number' ? 1 : -1;
     }
     if (a.data[headingObject.name] > b.data[headingObject.name]) {
-      return -1;
+      return headingObject.type == 'number' ? -1 : 1;
     }
   });
   let tableElement = document.querySelector('table tbody');
