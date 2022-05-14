@@ -1,2 +1,16 @@
 mixin gallery()
-  
+  .gallery__wrapper
+    .container
+      .gallery__line
+      h2(class="gallery__title") GALLERY
+      .gallery__block
+        .gallery__block-left
+          img(alt="gallery-left" src='./assets/gallery-left.jpg')
+        .gallery__block-right
+          img(alt="gallery-right1" src='./assets/gallery-right1.jpg')
+          img(alt="gallery-right2" src='./assets/gallery-right2.jpg')
+          img(alt="gallery-right3" src='./assets/gallery-right3.jpg')
+          img(alt="gallery-right4" src='./assets/gallery-right4.jpg')
+      button(type='button' class="gallery__button")
+        span SEE MORE
+
