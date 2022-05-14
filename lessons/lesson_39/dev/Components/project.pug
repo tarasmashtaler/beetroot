@@ -1,0 +1,20 @@
+mixin project()
+  .project__wrapper
+    .container
+      .project__line
+      h2(class="project__title") WHAT WE DO
+      +project-item({
+        img: 'project-left.jpg',
+        subtitle: 'ONE WORLD',
+        title: 'TRADE CENTER',
+        text: 'Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.',
+        location: '123'
+      })
+      +project-item({
+        img: 'project-right.jpg',
+        subtitle: 'INTERNATIONAL',
+        title: 'COMMERCE CENTRE',
+        text: 'Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.',
+        location: '123'
+      })
+        

@@ -1,0 +1,13 @@
+mixin news-item(args)
+  .news__item
+    img(alt="news-image" src='./assets/'+args.img)
+    .news__item-content
+      h3= args.title
+      div= args.text
+      .news__author
+        img(alt="news-foto" src='./assets/'+args.foto)
+        .news__name
+          h5= args.name
+          span= args.date
+
+

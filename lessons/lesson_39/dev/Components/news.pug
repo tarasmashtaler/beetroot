@@ -1,0 +1,30 @@
+mixin news()
+  .news__wrapper
+    .container
+      .news__line
+      h2 LATEST NEWS
+      .news__block
+        +news-item({
+          img: 'news1.jpg',
+          title: 'SEE THE UNMATCHED  BEAUTY OF THE GREAT.',
+          text: 'Free directories: directories are perfect for customers that are searching for...',
+          foto: 'news-foto1.jpg',
+          name: 'ALJA BRUN',
+          date: '20 Jan 2020'
+        })
+        +news-item({
+          img: 'news2.jpg',
+          title: 'EFFECTIVE ADVERTISING POINTERS.',
+          text: 'Having a home based business is a wonderful asset to your life...',
+          foto: 'news-foto2.jpg',
+          name: 'DOMINIC FREEMAN',
+          date: '13 Dec 2019'
+        })
+        +news-item({
+          img: 'news3.jpg',
+          title: 'HYPNOTIZE YOURSELF INTO THE GHOST.',
+          text: 'There are many things that are important to catalog design...',
+          foto: 'news-foto3.jpg',
+          name: 'ALICE WARD',
+          date: '30 Nov 2019'
+        })
