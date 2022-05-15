@@ -1,19 +1,20 @@
 
 const getCurrentWeather = () => {
-    return '+' + Math.floor((Math.random() * 10) + 1) + 'C';
-  }
+  return '+' + Math.floor((Math.random() * 10) + 1) + 'C';
+}
 
 const setNewWeatherInDom = () => {
   const storageWeatherDate = localStorage.getItem('weather-date');
 
   if (hoursDifference(new Date(), new Date(storageWeatherDate)) < 2) {
     const storageWeather = localStorage.getItem('weather');
+    console.log(storageWeather);
 
     updateWeatherInDom(storageWeather);
     return;
   } else {
     const currentWeather = getCurrentWeather();
-    
+
     updateWeatherInDom(currentWeather);
     setWeatherInStorage(currentWeather);
   }

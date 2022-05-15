@@ -1,16 +1,20 @@
 //- Components
 
 //- include ./dev/Components/header
-include ./dev/Components/news
 include ./dev/Components/project
+include ./dev/Components/news
 include ./dev/Components/gallery
 include ./dev/Components/footer
 
 //- Elements
 
-include ./dev/Elements/news-item
+include ./dev/Elements/logo
+include ./dev/Elements/social
+include ./dev/Elements/social-item
+
 include ./dev/Elements/project-item
 include ./dev/Elements/project-location
+include ./dev/Elements/news-item
 
 //- Page
 doctype html
@@ -28,4 +32,3 @@ html(lang="en")
 		+news
 		+gallery
 		+footer
-		//- +footer

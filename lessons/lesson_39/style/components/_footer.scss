@@ -1,7 +1,37 @@
+footer {
+  padding: 200px 0 230px 0;
+  width: 100%;
+  height: 550px;
+  background-image: url("/assets/footer.jpg");
+}
+
 .footer {
   &__wrapper {
     width: 100%;
-    height: 550px;
-    background-image: url("/assets/footer.jpg");
+    max-width: 770px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 240px;
+
+    span {
+      display: inline-block;
+      color: $c-white;
+      font-size: $fs-14;
+      line-height: 17px;
+      margin-top: 40px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 160px;
+    max-height: 40px;
   }
 }
