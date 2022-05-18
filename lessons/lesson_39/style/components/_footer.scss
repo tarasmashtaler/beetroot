@@ -3,6 +3,7 @@ footer {
   width: 100%;
   height: 550px;
   background-image: url("/assets/footer.jpg");
+  background-position: right;
 }
 
 .footer {
@@ -25,13 +26,5 @@ footer {
       line-height: 17px;
       margin-top: 40px;
     }
-  }
-
-  &__social {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 160px;
-    max-height: 40px;
   }
 }

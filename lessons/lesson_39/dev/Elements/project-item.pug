@@ -6,8 +6,10 @@ mixin project-item(args)
       h4= args.subtitle
       h2= args.title
       div(class="project__text")= args.text
-      button(type='button' class="project__button")
-        span MORE DETAILS
+      +button({
+        class: 'project__button',
+        text: 'MORE DETAILS'
+      }) 
       +project-location({
         place: '',
         content: args.location

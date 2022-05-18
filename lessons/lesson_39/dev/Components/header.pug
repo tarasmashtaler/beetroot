@@ -1,11 +1,13 @@
 mixin header()
   header
-    .header-fixed  
+    .header__wrap
       .container
-        .header__wrap
+        .header__header
           .header__logo
             +logo
-          .header__nav
-            +header-navigation
-            +button-header
-            //- +burger
+          .header-navigation
+          +social
+        h1 SIMPLE & MODERN   
+        h5 WE MAKE THE WORLD BEAUTIFUL EVERYDAY     
+        +arrow
+

@@ -1,19 +1,11 @@
 .project {
-  &__line {
-    width: 100%;
-    max-width: 100px;
-    margin: 100px auto 0 auto;
-    border: 1px solid $c-grey;
+  &__wrapper {
+    padding: 100px 0 140px 0;
   }
-
-  &__title {
-    margin-top: 30px;
-    text-align: center;
-  }
-
   &__block {
     margin-top: 145px;
     display: flex;
+    justify-content: space-between;
 
     &:nth-child(2n) {
       flex-direction: row-reverse;
@@ -22,6 +14,10 @@
         background-color: $c-blue;
         top: -55px;
         left: 215px;
+      }
+
+      .project__block-right {
+        margin: 0;
       }
     }
 
@@ -68,19 +64,6 @@
 
     button {
       margin-top: 40px;
-      display: flex;
-      align-items: center;
-      background: none;
-      border: 1px solid $c-grey;
-
-      span {
-        width: fit-content;
-        font-size: $fs-14;
-        line-height: 17px;
-        cursor: pointer;
-        padding: 20px 40px;
-        color: $c-button-black;
-      }
     }
   }
 }

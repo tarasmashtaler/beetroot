@@ -1,24 +1,16 @@
 .news {
   &__wrapper {
     width: 100%;
-    margin-top: 140px;
-    background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+    background-image: url("/assets/news-background.jpg");
     max-height: 1035px;
     padding-top: 135px;
     padding-bottom: 200px;
 
     h2 {
+      color: $c-white;
       margin-top: 30px;
       text-align: center;
-      color: $c-white;
     }
-  }
-
-  &__line {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    border: 1px solid $c-white;
   }
 
   &__block {
@@ -66,4 +58,9 @@
       color: $c-laguna;
     }
   }
+}
+
+.white {
+  border: 1px solid $c-white;
+
 }

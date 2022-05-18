@@ -1,8 +1,11 @@
 mixin news()
   .news__wrapper
     .container
-      .news__line
-      h2 LATEST NEWS
+      +title-line({
+          line: 'white',          
+          class: 'news__title',
+          title: 'LATEST NEWS'
+        })
       .news__block
         +news-item({
           img: 'news1.jpg',

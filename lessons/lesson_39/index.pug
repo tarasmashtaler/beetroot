@@ -1,6 +1,6 @@
 //- Components
 
-//- include ./dev/Components/header
+include ./dev/Components/header
 include ./dev/Components/project
 include ./dev/Components/news
 include ./dev/Components/gallery
@@ -10,7 +10,10 @@ include ./dev/Components/footer
 
 include ./dev/Elements/logo
 include ./dev/Elements/social
+include ./dev/Elements/title-line
+include ./dev/Elements/button
 include ./dev/Elements/social-item
+include ./dev/Elements/arrow
 
 include ./dev/Elements/project-item
 include ./dev/Elements/project-location
@@ -27,7 +30,7 @@ html(lang="en")
 		link(rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon")
 		link(rel="stylesheet" href="./style/index.css")
 	body
-		//- +header
+		+header
 		+project
 		+news
 		+gallery

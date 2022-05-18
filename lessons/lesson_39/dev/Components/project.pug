@@ -1,8 +1,11 @@
 mixin project()
   .project__wrapper
     .container
-      .project__line
-      h2(class="project__title") WHAT WE DO
+      .title
+        +title-line({
+          class: 'project__title',
+          title: 'WHAT WE DO'
+        })
       +project-item({
         img: 'project-left.jpg',
         subtitle: 'ONE WORLD',

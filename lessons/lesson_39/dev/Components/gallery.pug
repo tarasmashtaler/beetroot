@@ -1,8 +1,10 @@
 mixin gallery()
   .gallery__wrapper
     .container
-      .gallery__line
-      h2(class="gallery__title") GALLERY
+      +title-line({
+          class: 'gallery__title',
+          title: 'GALLERY'
+        })
       .gallery__block
         .gallery__block-left
           img(alt="gallery-left" src='./assets/gallery-left.jpg')
@@ -11,6 +13,8 @@ mixin gallery()
           img(alt="gallery-right2" src='./assets/gallery-right2.jpg')
           img(alt="gallery-right3" src='./assets/gallery-right3.jpg')
           img(alt="gallery-right4" src='./assets/gallery-right4.jpg')
-      button(type='button' class="gallery__button")
-        span SEE MORE
+      +button({
+        class: 'gallery__button',
+        text: 'SEE MORE'
+        }) 
 

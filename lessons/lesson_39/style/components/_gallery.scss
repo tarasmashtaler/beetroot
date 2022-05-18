@@ -1,14 +1,6 @@
 .gallery {
-  &__line {
-    width: 100%;
-    max-width: 100px;
-    margin: 140px auto 0 auto;
-    border: 1px solid $c-grey;
-  }
-
-  &__title {
-    margin-top: 30px;
-    text-align: center;
+  &__wrapper {
+    padding: 140px 0;
   }
 
   &__block {
@@ -41,20 +33,12 @@
     }
   }
 }
+
 // button
 .gallery__wrapper button {
-  margin: 40px auto 140px auto;
-  display: flex;
-  align-items: center;
-  background: none;
-  border: 1px solid $c-grey;
+  margin: 40px auto 0 auto;
 
-    span {
-    width: fit-content;
-    font-size: $fs-14;
-    line-height: 17px;
-    cursor: pointer;
+  span {
     padding: 15px 55px;
-    color: $c-button-black;
   }
 }

@@ -1,3 +1,4 @@
 mixin social-item(args)
   .social__item
-    img(alt="social-svg" src="./assets/"+args.svg)
+    a(href= args.href target="_blank")
+      img(alt="social-svg" src='./assets/'+args.svg)
