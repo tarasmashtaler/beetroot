@@ -50,33 +50,33 @@
                 <form action="" method="post">
                   <div class="form__item-row">
                     <div class="form__item">
-                      <label for="" class="form-label">First Name</label>
-                      <input type="text" class="form-input">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-input" name="firstName" id="firstName">
                       <span class="form-error hidden">Error message!!!</span>
                     </div>
                     <div class="form__item">
-                      <label for="" class="form-label">Last Name</label>
-                      <input type="text" class="form-input">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-input" name="lastName" id="lastName">
                       <span class="form-error hidden">Error message!!!</span>
                     </div>
                   </div>
                   <div class="form__item form__item-fullname">
-                    <label for="" class="form-label">Full Name</label>
-                    <input type="text" class="form-input">
+                    <label for="username" class="form-label">Full Name</label>
+                    <input type="text" class="form-input" name="username" id="username">
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
                   <div class="form__item--big">
                     <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-input">
+                    <input type="email" class="form-input" name="email" id="email">
                     <!-- <div class="form__item--hint">We'll never share your email with anyone else.</div> -->
                   </div>
                   <div class="form__item form__item-fullname">
-                    <label for="" class="form-label">Password</label>
-                    <input type="text" class="form-input">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" class="form-input" name="password" id="password">
                     <span class="form-error hidden">Error message!!!</span>
                   </div>
                   <div class="button">
-                    <button type="submit">
+                    <button type="button" id="js-load-user">
                       <span>Реєстрація</span>
                     </button>
                   </div>
@@ -95,5 +95,6 @@
           <email:>tarasmash74@gmail.com</email:>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
