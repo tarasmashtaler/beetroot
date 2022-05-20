@@ -1,0 +1,30 @@
+.header__navigation {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  width: 100%;
+  max-width: 515px;
+  height: 20px;
+}
+
+.navigation {
+  margin-right: 60px;
+  &:last-child {
+    margin: 0;
+  }
+  span {
+    color: $c-white;
+    font-size: $fs-14;
+    line-height: 18px;
+    font-family: $ff-source;
+  }
+  li {
+  //   &:last-child {
+  //     margin: 0;
+  //   }
+  }
+}
+.navigation__svg {
+  margin-right: 15px;
+
+} 

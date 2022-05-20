@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 70px;
 }
 .header-home a {
   color: rgb(220, 212, 230);
@@ -117,7 +117,7 @@ select:focus {
 }
 
 .form-error {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 100%;
   font-size: 12px;
@@ -132,7 +132,7 @@ input {
 /* mail */
 .form__item--big {
   width: 100;
-  margin-top: 30px;
+  margin-top: 15px;
   /* display: flex;
   flex-direction: column; */
 }
@@ -155,10 +155,29 @@ input {
 /* button */
 .button {
   margin: 20px auto;
+  display: flex;
 }
 button {
   padding: 10px;
   cursor: pointer;
+}
+/* error */
+.error {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  margin: 0 auto;
+}
+.form-success, .form-error {
+  font-size: 16px;
+  text-align: center;
+} 
+.form-success {
+  color: green;
+  font-size: 26px;
+
 }
 /*footer*/
 footer {
