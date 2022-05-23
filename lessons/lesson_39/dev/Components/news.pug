@@ -6,28 +6,65 @@ mixin news()
           class: 'news__title',
           title: 'LATEST NEWS'
         })
-      .news__block
-        +news-item({
-          img: 'news1.jpg',
-          title: 'SEE THE UNMATCHED  BEAUTY OF THE GREAT.',
-          text: 'Free directories: directories are perfect for customers that are searching for...',
-          foto: 'news-foto1.jpg',
-          name: 'ALJA BRUN',
-          date: '20 Jan 2020'
-        })
-        +news-item({
-          img: 'news2.jpg',
-          title: 'EFFECTIVE ADVERTISING POINTERS.',
-          text: 'Having a home based business is a wonderful asset to your life...',
-          foto: 'news-foto2.jpg',
-          name: 'DOMINIC FREEMAN',
-          date: '13 Dec 2019'
-        })
-        +news-item({
-          img: 'news3.jpg',
-          title: 'HYPNOTIZE YOURSELF INTO THE GHOST.',
-          text: 'There are many things that are important to catalog design...',
-          foto: 'news-foto3.jpg',
-          name: 'ALICE WARD',
-          date: '30 Nov 2019'
-        })
+      //- <div class="swiper mySwiper">
+      //-   <div class="swiper-wrapper">
+      //-     <div class="swiper-slide">Slide 1</div>
+      //-     <div class="swiper-slide">Slide 2</div>
+      //-     <div class="swiper-slide">Slide 3</div>
+      //-     <div class="swiper-slide">Slide 4</div>
+      //-     <div class="swiper-slide">Slide 5</div>
+      //-     <div class="swiper-slide">Slide 6</div>
+      //-     <div class="swiper-slide">Slide 7</div>
+      //-     <div class="swiper-slide">Slide 8</div>
+      //-     <div class="swiper-slide">Slide 9</div>
+      //-   </div>
+      //-   <div class="swiper-button-next"></div>
+      //-   <div class="swiper-button-prev"></div>
+      //- </div>
+      div(class="item-slider swiper mySwiper")  
+        div(class="news__block swiper-wrapper")
+          +news-item({
+            img: 'news1.jpg',
+            title: 'SEE THE UNMATCHED  BEAUTY OF THE GREAT.',
+            text: 'Free directories: directories are perfect for customers that are searching for...',
+            foto: 'news-foto1.jpg',
+            name: 'ALJA BRUN',
+            date: '20 Jan 2020'
+          })
+          +news-item({
+            img: 'news2.jpg',
+            title: 'EFFECTIVE ADVERTISING POINTERS.',
+            text: 'Having a home based business is a wonderful asset to your life...',
+            foto: 'news-foto2.jpg',
+            name: 'DOMINIC FREEMAN',
+            date: '13 Dec 2019'
+          })
+          +news-item({
+            img: 'news3.jpg',
+            title: 'HYPNOTIZE YOURSELF INTO THE GHOST.',
+            text: 'There are many things that are important to catalog design...',
+            foto: 'news-foto3.jpg',
+            name: 'ALICE WARD',
+            date: '30 Nov 2019'
+          })
+          +news-item({
+            img: 'news1.jpg',
+            title: 'SEE THE UNMATCHED  BEAUTY OF THE GREAT.',
+            text: 'Free directories: directories are perfect for customers that are searching for...',
+            foto: 'news-foto1.jpg',
+            name: 'ALJA BRUN',
+            date: '20 Jan 2020'
+          })
+          +news-item({
+            img: 'news2.jpg',
+            title: 'EFFECTIVE ADVERTISING POINTERS.',
+            text: 'Having a home based business is a wonderful asset to your life...',
+            foto: 'news-foto2.jpg',
+            name: 'DOMINIC FREEMAN',
+            date: '13 Dec 2019'
+          })
+        //- стрілки управління
+        .swiper-button-prev  
+        .swiper-button-next
+        //- пагінація
+        .swiper-pagination

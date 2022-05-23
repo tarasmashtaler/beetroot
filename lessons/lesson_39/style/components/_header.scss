@@ -1,5 +1,7 @@
 header {
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   // height: 100vh;
   height: 800px;
   background-image: url("/assets/header-background.jpg");
@@ -33,7 +35,9 @@ header {
     align-items: center;
   }
 }
-// .logo__wrapper {
-//   display: flex;
-//   align-items: center;
-// }
+.logo__wrapper {
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+}

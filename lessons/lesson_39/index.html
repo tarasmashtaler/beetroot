@@ -7,6 +7,7 @@
     <title>Проєкт 2. Архітектура — базовий вебсайт + JS</title>
     <link rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <header>
@@ -17,28 +18,16 @@
               <div class="logo__wrapper"><img alt="logo-svg" src="./assets/Logo.svg"/></div>
             </div>
             <div class="header__navigation">
-              <div class="navigation__svg"><img alt="navigation-svg" src="./assets/Ellipse.svg"/></div>
               <nav class="navigation">
                 <ul class="navigation__list">
-                  <li class="navigation__item"> <a class="navigation__link"><span>ABOUT US</span></a></li>
-                </ul>
-              </nav>
-              <div class="navigation__svg"><img alt="navigation-svg" src="./assets/Ellipse.svg"/></div>
-              <nav class="navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item"> <a class="navigation__link"><span>PROJECTS</span></a></li>
-                </ul>
-              </nav>
-              <div class="navigation__svg"><img alt="navigation-svg" src="./assets/Ellipse.svg"/></div>
-              <nav class="navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item"> <a class="navigation__link"><span>NEWS</span></a></li>
-                </ul>
-              </nav>
-              <div class="navigation__svg"><img alt="navigation-svg" src="./assets/Ellipse.svg"/></div>
-              <nav class="navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item"> <a class="navigation__link"><span>CONTACT</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>ABOUT US</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>PROJECTS</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>NEWS</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>CONTACT         </span></a></li>
                 </ul>
               </nav>
             </div>
@@ -96,40 +85,67 @@
           <div class="title__line white"></div>
           <h2 class="news__title">LATEST NEWS</h2>
         </div>
-        <div class="news__block">
-          <div class="news__item"><img alt="news-image" src="./assets/news1.jpg"/>
-            <div class="news__item-content">
-              <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
-              <div>Free directories: directories are perfect for customers that are searching for...</div>
-              <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
-                <div class="news__name">
-                  <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
+        <div class="item-slider swiper mySwiper"> 
+          <div class="news__block swiper-wrapper">
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news1.jpg"/>
+              <div class="news__item-content">
+                <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                <div>Free directories: directories are perfect for customers that are searching for...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
+                  <div class="news__name">
+                    <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news2.jpg"/>
+              <div class="news__item-content">
+                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                <div>Having a home based business is a wonderful asset to your life...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
+                  <div class="news__name">
+                    <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news3.jpg"/>
+              <div class="news__item-content">
+                <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <div>There are many things that are important to catalog design...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto3.jpg"/>
+                  <div class="news__name">
+                    <h5>ALICE WARD</h5><span>30 Nov 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news1.jpg"/>
+              <div class="news__item-content">
+                <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                <div>Free directories: directories are perfect for customers that are searching for...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
+                  <div class="news__name">
+                    <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news2.jpg"/>
+              <div class="news__item-content">
+                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                <div>Having a home based business is a wonderful asset to your life...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
+                  <div class="news__name">
+                    <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="news__item"><img alt="news-image" src="./assets/news2.jpg"/>
-            <div class="news__item-content">
-              <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
-              <div>Having a home based business is a wonderful asset to your life...</div>
-              <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
-                <div class="news__name">
-                  <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="news__item"><img alt="news-image" src="./assets/news3.jpg"/>
-            <div class="news__item-content">
-              <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-              <div>There are many things that are important to catalog design...</div>
-              <div class="news__author"><img alt="news-foto" src="./assets/news-foto3.jpg"/>
-                <div class="news__name">
-                  <h5>ALICE WARD</h5><span>30 Nov 2019</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="swiper-button-prev"> </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -146,6 +162,67 @@
         <button class="gallery__button" type="button"><span>SEE MORE</span></button>
       </div>
     </div>
+    <div class="map__wrapper">
+      <div id="map"></div>
+      <div class="form__wrapper">
+        <div class="container">
+          <div class="title__wrapper">
+            <div class="title__line"></div>
+            <h2 class="form__title">GET IN TOUCH</h2>
+          </div>
+          <div class="form__block">
+            <div class="form__block-left">
+              <div class="form__contacts">
+                <div class="form__contacts-svg"><img/></div>
+                <div class="form__contacts-contact"><span>91 Nolan Extensions Suite 670</span></div>
+              </div>
+              <div class="form__contacts">   
+                <div class="form__svg"><img/></div>
+                <div class="form__svg-content"><span>+001 356-868-2454</span></div>
+              </div>
+              <div class="form__contacts">   
+                <div class="form__svg"><img/></div>
+                <div class="form__svg-content"><span>montichello@service.com</span></div>
+              </div>
+              <div class="form__contacts">   
+                <div class="form__svg"><img/></div>
+                <div class="form__svg-content"><span>From 07:05AM to 19:30PM</span></div>
+              </div>
+            </div>
+            <div class="form__block-right"><div class="form__item form__item-fullname">
+<label for="username" class="form-label"></label>
+<input type="text" class="form-input" name="username" id="username">
+<!-- <span class="form-error hidden">Error message!!!</span> -->
+</div>
+<div class="form__item-email">
+<label for="email" class="form-label"></label>
+<input type="email" class="form-input" name="email" id="email" placeholder="Email">
+<!-- <span class="form-error hidden">Error message!!!</span> -->
+</div>
+              <div class="form__wrapper-button">
+                <button class="form__button" type="button"><span>SUBMIT</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><script>
+      <!-- let map;
+      function initMap() {
+        let pos = {lat: 40.704684167724146, lng: -73.90215018656934};
+        let opt = {
+          center: {lat: 40.68077900625095, lng: -73.93857836621153},
+          zoom: 16,
+        };  
+        let map = new google.maps.Map(document.getElementById('map'), opt);
+        let marker = new google.maps.Marker({
+          position: pos,
+          map: map,
+          title: 'Ти дивишся на Ріджвуд',
+          icon: ''
+        });
+      }
+      --></script>    
+    </div>
     <footer>
       <div class="footer__wrapper">
         <div class="footer__logo">
@@ -157,6 +234,8 @@
           <div class="social__item"><a href="https://www.instagram.com" target="_blank"><img alt="social-svg" src="./assets/i11.svg"/></a></div>
         </div>
       </div>
-    </footer>
+    </footer><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script defer type="module" src="js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuPXhjp_nx1a6HFgFq-yRhM2GEsNg-RUM&callback=initMap" type="text/javascript"></script>		
   </body>
 </html>

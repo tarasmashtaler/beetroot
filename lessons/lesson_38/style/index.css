@@ -1,0 +1,103 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+}
+:root {
+  --c-grey: #545454;
+  --c-balck: #1c1c1c;
+  --c-blue: #007bff;
+  --c-grey2: #969696;
+  --c-gray-3: #f2f2f2;
+  --c-white: #ffffff;
+}
+/*  global fonts */
+body {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Inter", sans-serif;
+}
+/* css for home page */
+.header-home {
+  background: rgb(26, 6, 6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.header-home a {
+  color: rgb(220, 212, 230);
+  margin-left: 20px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.header__nav {
+  margin-right: 20px;
+  font-size: 12px;
+}
+.header__nav a:nth-child(1) {
+  margin: 0;
+}
+.header__lesson {
+  color: aliceblue;
+  font-size: 20px;
+}
+/* section */
+.map__wrapper {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+#map {
+  width: 100%;
+  height: 700px;
+}
+/* button */
+.button {
+  margin: 20px auto;
+  display: flex;
+}
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+/* error */
+.error {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  margin: 0 auto;
+}
+.form-success, .form-error {
+  font-size: 16px;
+  text-align: center;
+} 
+.form-success {
+  color: green;
+  font-size: 26px;
+
+}
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  color: white;
+  font-style: italic;
+}

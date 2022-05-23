@@ -1,0 +1,21 @@
+mixin map()
+  .map__wrapper
+    div(id="map")
+    +form
+    <script>
+      // let map;
+        function initMap() {
+          let pos = {lat: 40.704684167724146, lng: -73.90215018656934};
+          let opt = {
+            center: {lat: 40.68077900625095, lng: -73.93857836621153},
+            zoom: 16,
+          };  
+          let map = new google.maps.Map(document.getElementById('map'), opt);
+          let marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            title: 'Ти дивишся на Ріджвуд',
+            icon: ''
+          });
+        }
+    </script>    

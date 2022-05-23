@@ -1,0 +1,46 @@
+mixin form()
+  .form__wrapper
+    .container
+      +title-line({
+          class: 'form__title',
+          title: 'GET IN TOUCH'
+        })
+      .form__block
+        .form__block-left
+          .form__contacts
+            .form__contacts-svg
+              img()
+            .form__contacts-contact
+              span 91 Nolan Extensions Suite 670
+          .form__contacts    
+            .form__svg
+              img()
+            .form__svg-content
+              span +001 356-868-2454
+          .form__contacts    
+            .form__svg
+              img()
+            .form__svg-content
+              span montichello@service.com
+          .form__contacts    
+            .form__svg
+              img()
+            .form__svg-content
+              span From 07:05AM to 19:30PM
+        .form__block-right
+          <div class="form__item form__item-fullname">
+            <label for="username" class="form-label"></label>
+            <input type="text" class="form-input" name="username" id="username">
+            <!-- <span class="form-error hidden">Error message!!!</span> -->
+          </div>
+          <div class="form__item-email">
+            <label for="email" class="form-label"></label>
+            <input type="email" class="form-input" name="email" id="email" placeholder="Email">
+            <!-- <span class="form-error hidden">Error message!!!</span> -->
+          </div>
+          .form__wrapper-button
+            +button({
+              class: 'form__button',
+              text: 'SUBMIT'
+              }) 
+    

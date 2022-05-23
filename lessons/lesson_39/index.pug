@@ -4,7 +4,9 @@ include ./dev/Components/header
 include ./dev/Components/project
 include ./dev/Components/news
 include ./dev/Components/gallery
+include ./dev/Components/map
 include ./dev/Components/footer
+include ./dev/Components/form
 
 //- Elements
 
@@ -30,9 +32,14 @@ html(lang="en")
 		title Проєкт 2. Архітектура — базовий вебсайт + JS
 		link(rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon")
 		link(rel="stylesheet" href="./style/index.css")
+		link(rel="stylesheet"	href="https://unpkg.com/swiper/swiper-bundle.min.css")
 	body
 		+header
 		+project
 		+news
 		+gallery
+		+map
 		+footer
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer type="module" src="js/script.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuPXhjp_nx1a6HFgFq-yRhM2GEsNg-RUM&callback=initMap" type="text/javascript"></script>		
