@@ -1,0 +1,44 @@
+.gallery {
+  &__wrapper {
+    padding: 140px 0;
+  }
+
+  &__block {
+    margin-top: 90px;
+    display: flex;
+
+    &-left {
+      width: 100%;
+      max-width: 580px;
+      margin-right: 10px;
+    }
+
+    &-right {
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        max-width: 285px;
+        max-height: 214px;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+
+        &:nth-child(2n+1) {
+          margin-right: 10px;
+
+        }
+      }
+    }
+  }
+}
+
+// button
+.gallery__wrapper button {
+  margin: 40px auto 0 auto;
+
+  span {
+    padding: 15px 55px;
+  }
+}

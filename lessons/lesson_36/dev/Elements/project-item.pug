@@ -1,0 +1,16 @@
+mixin project-item(args)
+  .project__block
+    .project__block-left
+      img(alt="project-image" src="./assets/"+args.img)
+    .project__block-right
+      h4= args.subtitle
+      h2= args.title
+      div(class="project__text")= args.text
+      +button({
+        class: 'project__button',
+        text: 'MORE DETAILS'
+      }) 
+      +project-location({
+        place: '',
+        content: args.location
+      })  

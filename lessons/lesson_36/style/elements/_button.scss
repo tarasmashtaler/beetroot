@@ -1,0 +1,23 @@
+body button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid $c-grey;
+
+  span {
+    width: fit-content;
+    font-size: $fs-14;
+    line-height: 17px;
+    cursor: pointer;
+    padding: 20px 40px;
+    color: $c-button-black;
+  }
+}
+
+body button:hover {
+  border: 1px solid $c-blue;
+}
+
+body button:focus {
+  background-color: $c-laguna;
+}

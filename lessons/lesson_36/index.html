@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проєкт 2. Архітектура — базовий вебсайт + JS</title>
+    <link rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header__wrap">
+        <div class="container">
+          <div class="header__header">
+            <div class="header__logo">
+              <div class="logo__wrapper"><img alt="logo-svg" src="./assets/Logo.svg"/></div>
+            </div>
+            <div class="header__navigation">
+              <nav class="navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>ABOUT US</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>PROJECTS</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>NEWS</span></a></li>
+                  <li class="navigation__item"> <a class="navigation__link">
+                      <div class="navigation__circle"></div><span>CONTACT         </span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="social__wrapper">
+              <div class="social__item"><a href="https://www.facebook.com" target="_blank"><img alt="social-svg" src="./assets/f1.svg"/></a></div>
+              <div class="social__item"><a href="https://twitter.com" target="_blank"><img alt="social-svg" src="./assets/t1.svg"/></a></div>
+              <div class="social__item"><a href="https://www.instagram.com" target="_blank"><img alt="social-svg" src="./assets/i11.svg"/></a></div>
+            </div>
+          </div>
+          <h1>SIMPLE & MODERN   </h1>
+          <h5>WE MAKE THE WORLD BEAUTIFUL EVERYDAY     </h5>
+          <div class="arrow__wrapper"><a href=""><img alt="arrow-svg" src="./assets/arrow.svg"></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="news__wrapper">
+      <div class="container">
+        <div class="title__wrapper">
+          <div class="title__line white"></div>
+          <h2 class="news__title">LATEST NEWS</h2>
+        </div>
+        <div class="item-slider swiper mySwiper"> 
+          <div class="news__block swiper-wrapper">
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news1.jpg"/>
+              <div class="news__item-content">
+                <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                <div>Free directories: directories are perfect for customers that are searching for...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
+                  <div class="news__name">
+                    <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news2.jpg"/>
+              <div class="news__item-content">
+                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                <div>Having a home based business is a wonderful asset to your life...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
+                  <div class="news__name">
+                    <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news3.jpg"/>
+              <div class="news__item-content">
+                <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <div>There are many things that are important to catalog design...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto3.jpg"/>
+                  <div class="news__name">
+                    <h5>ALICE WARD</h5><span>30 Nov 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news1.jpg"/>
+              <div class="news__item-content">
+                <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                <div>Free directories: directories are perfect for customers that are searching for...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
+                  <div class="news__name">
+                    <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news2.jpg"/>
+              <div class="news__item-content">
+                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                <div>Having a home based business is a wonderful asset to your life...</div>
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
+                  <div class="news__name">
+                    <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"> </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <div class="logo__wrapper"><img alt="logo-svg" src="./assets/Logo.svg"/></div><span>Copyrights © 2020 Montichello</span>
+        </div>
+        <div class="social__wrapper">
+          <div class="social__item"><a href="https://www.facebook.com" target="_blank"><img alt="social-svg" src="./assets/f1.svg"/></a></div>
+          <div class="social__item"><a href="https://twitter.com" target="_blank"><img alt="social-svg" src="./assets/t1.svg"/></a></div>
+          <div class="social__item"><a href="https://www.instagram.com" target="_blank"><img alt="social-svg" src="./assets/i11.svg"/></a></div>
+        </div>
+      </div>
+    </footer><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script defer type="module" src="js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuPXhjp_nx1a6HFgFq-yRhM2GEsNg-RUM&callback=initMap" type="text/javascript"></script>		
+  </body>
+</html>

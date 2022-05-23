@@ -1,0 +1,59 @@
+// * Font Families
+$ff-main: 'Montserrat', sans-serif;
+$ff-sans: 'Open Sans', sans-serif;
+$ff-source: 'Source Sans Pro', sans-serif;
+
+
+// * Font Sizes
+
+// Text font sizes
+
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-15: 15px;
+$fs-18: 18px;
+$fs-22: 22px;
+$fs-80: 80px;
+// Headings font sizes
+
+$fs-heading-one: 80px;
+$fs-heading-two: 44px;
+// $fs-heading-three: 36px;
+// $fs-heading-four: $fs-label;
+// $fs-heading-five: $fs-text-large;
+// $fs-heading-six: $fs-base;
+
+// * Font Weights
+$fw-base: normal;
+$fw-bold: bold;
+
+// * Colors
+$c-border: #2C4058;
+$c-button-black: #000000;
+$c-background-white: #E5E5E5;
+$c-grey: #2C4058;
+$c-white: #FFFFFF;
+$c-laguna: #55B7FF;
+$c-blue: #7E5AFF;
+
+$c-linear-gradient-S: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+$c-linear-gradient-L: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+$c-linear-gradient-F: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+
+
+// * Transition
+$ts-normal: .35s cubic-bezier(.4,0,.2,1);
+
+// * Media Queries: Breakpoints
+$small: 320px;
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$screen: 1400px;
+$large: 1920px;
+
+
+
+
+
+

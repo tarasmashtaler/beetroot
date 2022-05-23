@@ -1,9 +1,10 @@
 // SWAPER
+// new Swiper('.item-slider');
 var swiper = new Swiper(".mySwiper", {
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
@@ -12,8 +13,6 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-
 
 // activ circle тnavigation
 const menuCircle = document.getElementsByClassName('navigation__link');

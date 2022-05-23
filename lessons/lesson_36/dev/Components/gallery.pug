@@ -1,0 +1,20 @@
+mixin gallery()
+  .gallery__wrapper
+    .container
+      +title-line({
+          class: 'gallery__title',
+          title: 'GALLERY'
+        })
+      .gallery__block
+        .gallery__block-left
+          img(alt="gallery-left" src='./assets/gallery-left.jpg')
+        .gallery__block-right
+          img(alt="gallery-right1" src='./assets/gallery-right1.jpg')
+          img(alt="gallery-right2" src='./assets/gallery-right2.jpg')
+          img(alt="gallery-right3" src='./assets/gallery-right3.jpg')
+          img(alt="gallery-right4" src='./assets/gallery-right4.jpg')
+      +button({
+        class: 'gallery__button',
+        text: 'SEE MORE'
+        }) 
+

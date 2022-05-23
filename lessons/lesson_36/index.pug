@@ -1,0 +1,45 @@
+//- Components
+
+include ./dev/Components/header
+include ./dev/Components/project
+include ./dev/Components/news
+include ./dev/Components/gallery
+include ./dev/Components/map
+include ./dev/Components/footer
+include ./dev/Components/form
+
+//- Elements
+
+include ./dev/Elements/logo
+include ./dev/Elements/navigation
+include ./dev/Elements/navigation-item
+include ./dev/Elements/social
+include ./dev/Elements/social-item
+include ./dev/Elements/arrow
+include ./dev/Elements/title-line
+include ./dev/Elements/button
+include ./dev/Elements/project-item
+include ./dev/Elements/project-location
+include ./dev/Elements/news-item
+
+//- Page
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Проєкт 2. Архітектура — базовий вебсайт + JS
+		link(rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon")
+		link(rel="stylesheet" href="./style/index.css")
+		link(rel="stylesheet"	href="https://unpkg.com/swiper/swiper-bundle.min.css")
+	body
+		+header
+		//- +project
+		+news
+		//- +gallery
+		//- +map
+		+footer
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer type="module" src="js/script.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuPXhjp_nx1a6HFgFq-yRhM2GEsNg-RUM&callback=initMap" type="text/javascript"></script>		
