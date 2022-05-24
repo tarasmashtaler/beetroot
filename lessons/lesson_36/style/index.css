@@ -615,14 +615,14 @@ header {
   max-width: 1600px;
   margin: 0 auto;
   height: 800px;
-  background-image: url("../lesson_36/assets/header-background.jpg");
+  background-image: url("../assets/header-background.jpg");
 }
 
 .header__wrap {
   width: 100%;
   padding: 50px;
   height: 800px;
-  background-image: url("./assets/header-background.png");
+  background-image: url("../assets/header-background.png");
 }
 
 .header__wrap h1 {
@@ -914,7 +914,7 @@ footer {
   max-width: 1600px;
   margin: 0 auto;
   height: 550px;
-  background-image: url("/lessons/lesson_36/assets/footer.jpg");
+  background-image: url("../assets/footer.jpg");
   background-position: right;
 }
 
