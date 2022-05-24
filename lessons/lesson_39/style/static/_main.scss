@@ -9,6 +9,9 @@ body {
   font-size: $fs-22;
   color: $c-grey;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,

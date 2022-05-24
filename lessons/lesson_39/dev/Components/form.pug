@@ -1,5 +1,5 @@
 mixin form()
-  .form__wrapper
+  .form__wrapper#contact
     .container
       +title-line({
           class: 'form__title',
@@ -8,23 +8,23 @@ mixin form()
       .form__block
         .form__block-left
           .form__contacts
-            .form__contacts-svg
-              img()
+            .form__svg
+              img(alt="location-svg" src='./assets/location-dot-solid.svg')
             .form__contacts-contact
               span 91 Nolan Extensions Suite 670
           .form__contacts    
             .form__svg
-              img()
+              img(alt="phone-svg" src='./assets/phone-solid.svg')
             .form__svg-content
               span +001 356-868-2454
           .form__contacts    
             .form__svg
-              img()
+              img(alt="inbox-svg" src='./assets/inbox-solid.svg')
             .form__svg-content
               span montichello@service.com
           .form__contacts    
             .form__svg
-              img()
+              img(alt="clock-svg" src='./assets/clock-solid.svg')
             .form__svg-content
               span From 07:05AM to 19:30PM
         .form__block-right

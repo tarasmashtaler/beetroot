@@ -357,6 +357,10 @@ body {
   color: #2C4058;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -621,7 +625,7 @@ header {
   max-width: 1600px;
   margin: 0 auto;
   height: 800px;
-  background-image: url("/assets/header-background.jpg");
+  background-image: url("/lessons/lesson_39/assets/header-background.jpg");
 }
 
 .header__wrap {
@@ -669,10 +673,11 @@ header {
 }
 
 .news__wrapper {
+  position: relative;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: url("/assets/news-background.jpg");
+  background-image: url("/lessons/lesson_39/assets/news-background.jpg");
   max-height: 1035px;
   padding-top: 135px;
   padding-bottom: 200px;
@@ -692,7 +697,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 90px;
 }
 
 .news__item {
@@ -746,6 +750,14 @@ header {
 
 .white {
   border: 1px solid #FFFFFF;
+}
+
+.swiper {
+  margin-top: 90px;
+}
+
+.news__wrapper .swiper-button-next {
+  right: 30px;
 }
 
 .project__wrapper {
@@ -902,7 +914,7 @@ footer {
   max-width: 1600px;
   margin: 0 auto;
   height: 550px;
-  background-image: url("/assets/footer.jpg");
+  background-image: url("/lessons/lesson_39/assets/footer.jpg");
   background-position: right;
 }
 
@@ -956,6 +968,12 @@ footer {
   margin-right: 40px;
 }
 
+.form__svg {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
 .form__block-right {
   width: 100%;
 }
@@ -985,6 +1003,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+}
+
+.form__contacts-contact span {
+  white-space: nowrap;
 }
 
 .form__contacts:last-child {

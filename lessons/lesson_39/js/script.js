@@ -1,9 +1,9 @@
 // SWAPER
-var swiper = new Swiper(".mySwiper", {
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+let swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
@@ -23,19 +23,12 @@ const menuToggle = function (elementIndex) {
   for (let item of circle) {
     item.classList.remove('navigation__circle-activ');
   }
-console.log(circle[elementIndex]);
-circle[elementIndex].classList.add('navigation__circle-activ');
-  // circle.classList.toggle('navigation__circle-activ');
-}
-// for (const [item, index] of menuCircle) {
-//   console.log(item, index)
-//   item.addEventListener("click", function(){
-//     menuToggle(index);
-//   });
-// }
+  console.log(circle[elementIndex]);
+  circle[elementIndex].classList.add('navigation__circle-activ');
+};
 
 Array.from(menuCircle).forEach(function (element, index) {
-  element.addEventListener("click", function(){
+  element.addEventListener("click", function () {
     menuToggle(index);
   });
 });

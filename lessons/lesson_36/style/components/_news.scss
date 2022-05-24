@@ -1,9 +1,10 @@
 .news {
   &__wrapper {
+    position: relative;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    background-image: url("/assets/news-background.jpg");
+    background-image: url("/lessons/lesson_36/assets/news-background.jpg");
     max-height: 1035px;
     padding-top: 135px;
     padding-bottom: 200px;
@@ -19,7 +20,7 @@
   &__block {
     display: flex;
     justify-content: space-between;
-    margin-top: 90px;
+    // margin-top: 90px;
   }
 
   &__item {
@@ -65,5 +66,27 @@
 
 .white {
   border: 1px solid $c-white;
+
+}
+
+// swiper
+.swiper {
+  margin-top: 90px;
+}
+
+.news__wrapper {
+  & .swiper-button-next {
+    color: black;
+    right: 30px;
+  }
+
+  & .swiper-button-prev {
+    color: black;
+    left: 30px;
+
+  }
+}
+.item-slider .swiper-pagination-bullet {
+  background: black;
 
 }

@@ -615,14 +615,14 @@ header {
   max-width: 1600px;
   margin: 0 auto;
   height: 800px;
-  background-image: url("/assets/header-background.jpg");
+  background-image: url("/lessons/lesson_36/assets/header-background.jpg");
 }
 
 .header__wrap {
   width: 100%;
   padding: 50px;
   height: 800px;
-  background-image: url("/assets/header-background.png");
+  background-image: url("/lessons/lesson_36/assets/header-background.png");
 }
 
 .header__wrap h1 {
@@ -663,10 +663,11 @@ header {
 }
 
 .news__wrapper {
+  position: relative;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: url("/assets/news-background.jpg");
+  background-image: url("/lessons/lesson_36/assets/news-background.jpg");
   max-height: 1035px;
   padding-top: 135px;
   padding-bottom: 200px;
@@ -686,7 +687,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 90px;
 }
 
 .news__item {
@@ -740,6 +740,24 @@ header {
 
 .white {
   border: 1px solid #FFFFFF;
+}
+
+.swiper {
+  margin-top: 90px;
+}
+
+.news__wrapper .swiper-button-next {
+  color: black;
+  right: 30px;
+}
+
+.news__wrapper .swiper-button-prev {
+  color: black;
+  left: 30px;
+}
+
+.item-slider .swiper-pagination-bullet {
+  background: black;
 }
 
 .project__wrapper {
@@ -896,7 +914,7 @@ footer {
   max-width: 1600px;
   margin: 0 auto;
   height: 550px;
-  background-image: url("/assets/footer.jpg");
+  background-image: url("/lessons/lesson_36/assets/footer.jpg");
   background-position: right;
 }
 

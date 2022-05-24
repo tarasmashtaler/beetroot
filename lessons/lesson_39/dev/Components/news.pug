@@ -1,5 +1,5 @@
 mixin news()
-  .news__wrapper
+  .news__wrapper#news
     .container
       +title-line({
         line: 'white',          
@@ -48,9 +48,9 @@ mixin news()
             name: 'DOMINIC FREEMAN',
             date: '13 Dec 2019'
           })
-        //- стрілки управління
-        .swiper-button-prev  
-        .swiper-button-next
-        //- пагінація
-        .swiper-pagination
+      //- стрілки управління
+      .swiper-button-prev  
+      .swiper-button-next
+      //- пагінація
+      .swiper-pagination
         
