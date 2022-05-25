@@ -4,7 +4,9 @@
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    background-image: url("/lessons/lesson_39/assets/news-background.jpg");
+    // background-image: url("/lessons/lesson_39/assets/news-background.jpg");
+    background-image: url("../assets/news-background.jpg");
+
     max-height: 1035px;
     padding-top: 135px;
     padding-bottom: 200px;
@@ -75,15 +77,59 @@
 }
 
 .news__wrapper {
-  & .swiper-button-next {
-    // color: black;
-    right: 30px;
+
+  & .swiper-button-next,
+  & .swiper-button-prev {
+    // position: relative;
+    // right: 30px;
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url(../assets/Right.svg);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   & .swiper-button-prev {
-    // color: black;
+    right: auto;
 
-    // left: 30px;
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
 
+  & .swiper-pagination {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+
+    .swiper-pagination-bullet {
+      border: 1px solid $c-white;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      background-color: transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $c-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-color: $c-white;
+      }
+
+      &-active {
+        background-color: $c-white;
+      }
+    }
   }
 }

@@ -625,14 +625,14 @@ header {
   max-width: 1600px;
   margin: 0 auto;
   height: 800px;
-  background-image: url("/lessons/lesson_39/assets/header-background.jpg");
+  background-image: url("../assets/header-background.jpg");
 }
 
 .header__wrap {
   width: 100%;
   padding: 50px;
   height: 800px;
-  background-image: url("/assets/header-background.png");
+  background-image: url("../assets/header-background.png");
 }
 
 .header__wrap h1 {
@@ -677,7 +677,7 @@ header {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: url("/lessons/lesson_39/assets/news-background.jpg");
+  background-image: url("../assets/news-background.jpg");
   max-height: 1035px;
   padding-top: 135px;
   padding-bottom: 200px;
@@ -756,8 +756,60 @@ header {
   margin-top: 90px;
 }
 
-.news__wrapper .swiper-button-next {
-  right: 30px;
+.news__wrapper .swiper-button-next,
+.news__wrapper .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.news__wrapper .swiper-button-next::after,
+.news__wrapper .swiper-button-prev::after {
+  content: '';
+  position: absolute;
+  background: url(../assets/Right.svg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.news__wrapper .swiper-button-prev {
+  right: auto;
+}
+
+.news__wrapper .swiper-button-prev::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.news__wrapper .swiper-pagination {
+  position: relative;
+  top: 0;
+  margin-top: 50px;
+}
+
+.news__wrapper .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.news__wrapper .swiper-pagination .swiper-pagination-bullet:hover {
+  background-color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.news__wrapper .swiper-pagination .swiper-pagination-bullet:active {
+  background-color: #FFFFFF;
+}
+
+.news__wrapper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
 }
 
 .project__wrapper {
@@ -914,7 +966,7 @@ footer {
   max-width: 1600px;
   margin: 0 auto;
   height: 550px;
-  background-image: url("/lessons/lesson_39/assets/footer.jpg");
+  background-image: url("../assets/footer.jpg");
   background-position: right;
 }
 
