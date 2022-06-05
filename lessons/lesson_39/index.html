@@ -5,44 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
-    <link rel="shortcut icon" href="../asets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
-    <header>
-      <div class="header__wrap">
-        <div class="container">
-          <div class="header__header">
-            <div class="header__logo">
-              <div class="logo__wrapper"><img alt="logo-svg" src="./assets/Logo.svg"/></div>
-            </div>
-            <div class="header__navigation">
-              <nav class="navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item"> <a class="navigation__link">
-                      <div class="navigation__circle"></div><span>ABOUT US</span></a></li>
-                  <li class="navigation__item"> <a class="navigation__link" href="#projects">
-                      <div class="navigation__circle"></div><span>PROJECTS</span></a></li>
-                  <li class="navigation__item"> <a class="navigation__link" href="#news">
-                      <div class="navigation__circle"></div><span>NEWS</span></a></li>
-                  <li class="navigation__item"> <a class="navigation__link" href="#contact">
-                      <div class="navigation__circle"></div><span>CONTACT         </span></a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="social__wrapper">
-              <div class="social__item"><a href="https://www.facebook.com" target="_blank"><img alt="social-svg" src="./assets/f1.svg"/></a></div>
-              <div class="social__item"><a href="https://twitter.com" target="_blank"><img alt="social-svg" src="./assets/t1.svg"/></a></div>
-              <div class="social__item"><a href="https://www.instagram.com" target="_blank"><img alt="social-svg" src="./assets/i11.svg"/></a></div>
-            </div>
+    <div class="burger-menu-overlay"></div>
+    <div class="burger-menu">
+      <button class="button-header burger burger-active" type="button" aria-label="Menu icon"> <span></span><span></span><span></span></button>
+      <div class="header__navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"> <a class="navigation__link">
+                <div class="navigation__circle"></div><span>ABOUT US</span></a></li>
+            <li class="navigation__item"> <a class="navigation__link" href="#projects">
+                <div class="navigation__circle"></div><span>PROJECTS</span></a></li>
+            <li class="navigation__item"> <a class="navigation__link" href="#news">
+                <div class="navigation__circle"></div><span>NEWS</span></a></li>
+            <li class="navigation__item"> <a class="navigation__link" href="#contact">
+                <div class="navigation__circle"></div><span>CONTACT         </span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social__wrapper">
+        <div class="social__item"><a href="https://www.facebook.com" target="_blank"><img alt="social-svg" src="./assets/f1.svg"/></a></div>
+        <div class="social__item"><a href="https://twitter.com" target="_blank"><img alt="social-svg" src="./assets/t1.svg"/></a></div>
+        <div class="social__item"><a href="https://www.instagram.com" target="_blank"><img alt="social-svg" src="./assets/i11.svg"/></a></div>
+      </div>
+    </div>
+    <header class="sticky__header">
+      <div class="container">
+        <div class="header__header">
+          <div class="header__logo">
+            <div class="logo__wrapper"><img alt="logo-svg" src="./assets/Logo.svg"/></div>
           </div>
-          <h1>SIMPLE & MODERN   </h1>
-          <h5>WE MAKE THE WORLD BEAUTIFUL EVERYDAY     </h5>
-          <div class="arrow__wrapper"><a href="#projects"><img alt="arrow-svg" src="./assets/arrow.svg"></a></div>
+          <div class="header__navigation">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item"> <a class="navigation__link">
+                    <div class="navigation__circle"></div><span>ABOUT US</span></a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="#projects">
+                    <div class="navigation__circle"></div><span>PROJECTS</span></a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="#news">
+                    <div class="navigation__circle"></div><span>NEWS</span></a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="#contact">
+                    <div class="navigation__circle"></div><span>CONTACT         </span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="social__wrapper">
+            <div class="social__item"><a href="https://www.facebook.com" target="_blank"><img alt="social-svg" src="./assets/f1.svg"/></a></div>
+            <div class="social__item"><a href="https://twitter.com" target="_blank"><img alt="social-svg" src="./assets/t1.svg"/></a></div>
+            <div class="social__item"><a href="https://www.instagram.com" target="_blank"><img alt="social-svg" src="./assets/i11.svg"/></a></div>
+          </div>
+          <div class="header__burger">
+            <button class="button-header burger" type="button" aria-label="Menu icon"> <span></span><span></span><span></span></button>
+          </div>
         </div>
       </div>
     </header>
+    <div class="welcome">
+      <div class="header__wrap">
+        <div class="arrow__wrapper"><a href="#projects"><img alt="arrow-svg" src="./assets/arrow.svg"/></a></div>
+        <div class="container">
+          <div class="header__slider swiper mySwiperHeader"> 
+            <div class="header__block swiper-wrapper">
+              <div class="swiper-slide">
+                <h1>SIMPLE & MODERN</h1>
+                <h5>WE MAKE THE WORLD BEAUTIFUL EVERY DAY</h5>
+              </div>
+              <div class="swiper-slide"> 
+                <h1>BEST OF THE BEST    </h1>
+                <h5>WE MAKE THE WORLD BEAUTIFUL EVERY NIGHT</h5>
+              </div>
+              <div class="swiper-slide"> 
+                <h1>MODERN & SIMPLE   </h1>
+                <h5>WE MAKE THE WORLD BEAUTIFUL!!!</h5>
+              </div>
+              <div class="swiper-slide"> 
+                <h1>MODERN & MODERN </h1>
+                <h5>WE MAKE THE WORLD BEAUTIFUL ALWAYS</h5>
+              </div>
+              <div class="swiper-slide"> 
+                <h1>SIMPLE AND EASY   </h1>
+                <h5>WE MAKE THE WORLD BEAUTIFUL       </h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination-header">         </div>
+        </div>
+      </div>
+    </div>
     <div class="project__wrapper" id="projects">
       <div class="container">
         <div class="title">
@@ -87,10 +140,16 @@
         </div>
         <div class="item-slider swiper mySwiper"> 
           <div class="news__block swiper-wrapper">
-            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news1.jpg"/>
-              <div class="news__item-content">
-                <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
-                <div>Free directories: directories are perfect for customers that are searching for...</div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news1.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                    <div>Free directories: directories are perfect for customers that are searching for...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
                 <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
                   <div class="news__name">
                     <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
@@ -98,10 +157,16 @@
                 </div>
               </div>
             </div>
-            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news2.jpg"/>
-              <div class="news__item-content">
-                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
-                <div>Having a home based business is a wonderful asset to your life...</div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news2.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                    <div>Having a home based business is a wonderful asset to your life...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
                 <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
                   <div class="news__name">
                     <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
@@ -109,10 +174,16 @@
                 </div>
               </div>
             </div>
-            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news3.jpg"/>
-              <div class="news__item-content">
-                <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-                <div>There are many things that are important to catalog design...</div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news3.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                    <div>There are many things that are important to catalog design...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
                 <div class="news__author"><img alt="news-foto" src="./assets/news-foto3.jpg"/>
                   <div class="news__name">
                     <h5>ALICE WARD</h5><span>30 Nov 2019</span>
@@ -120,10 +191,16 @@
                 </div>
               </div>
             </div>
-            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news1.jpg"/>
-              <div class="news__item-content">
-                <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
-                <div>Free directories: directories are perfect for customers that are searching for...</div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news1.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                    <div>Free directories: directories are perfect for customers that are searching for...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
                 <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
                   <div class="news__name">
                     <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
@@ -131,13 +208,53 @@
                 </div>
               </div>
             </div>
-            <div class="news__item swiper-slide"><img alt="news-image" src="./assets/news2.jpg"/>
-              <div class="news__item-content">
-                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
-                <div>Having a home based business is a wonderful asset to your life...</div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news2.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                    <div>Having a home based business is a wonderful asset to your life...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
                 <div class="news__author"><img alt="news-foto" src="./assets/news-foto2.jpg"/>
                   <div class="news__name">
                     <h5>DOMINIC FREEMAN</h5><span>13 Dec 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news3.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                    <div>There are many things that are important to catalog design...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto3.jpg"/>
+                  <div class="news__name">
+                    <h5>ALICE WARD</h5><span>30 Nov 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__item swiper-slide">
+              <div class="news__item-top"><img alt="news-image" src="./assets/news1.jpg"/>
+                <div class="news__item-content">
+                  <div class="news__item-title">
+                    <h3>SEE THE UNMATCHED  BEAUTY OF THE GREAT.</h3>
+                    <div>Free directories: directories are perfect for customers that are searching for...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news__item-bottom">     
+                <div class="news__author"><img alt="news-foto" src="./assets/news-foto1.jpg"/>
+                  <div class="news__name">
+                    <h5>ALJA BRUN</h5><span>20 Jan 2020</span>
                   </div>
                 </div>
               </div>
@@ -189,18 +306,21 @@
                 <div class="form__svg-content"><span>From 07:05AM to 19:30PM</span></div>
               </div>
             </div>
-            <div class="form__block-right"><div class="form__item form__item-fullname">
+            <div class="form__block-right">
+              <form><div class="form__item form__item-fullname">
 <label for="username" class="form-label"></label>
 <input type="text" class="form-input" name="username" id="username">
-<!-- <span class="form-error hidden">Error message!!!</span> -->
+<span class="form-error form-error-user hidden" id="js-form-error">
 </div>
-<div class="form__item-email">
+<div class="form__item form__item-email">
 <label for="email" class="form-label"></label>
 <input type="email" class="form-input" name="email" id="email" placeholder="Email">
-<!-- <span class="form-error hidden">Error message!!!</span> -->
+<span class="form-error form-error-email hidden" id="js-form-error">
 </div>
+              </form>
               <div class="form__wrapper-button">
-                <button class="form__button" type="button"><span>SUBMIT</span></button>
+                <button class="form__button" type="button" id="js-load-user"><span>SUBMIT</span></button><div class="form__success">
+<span class="form-success hidden" id="js-form-success">   
               </div>
             </div>
           </div>

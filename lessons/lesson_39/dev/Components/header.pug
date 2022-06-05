@@ -1,13 +1,47 @@
 mixin header()
-  header
-    .header__wrap
-      .container
-        .header__header
+  .burger-menu-overlay
+  .burger-menu
+    button(type="button" aria-label="Menu icon").button-header.burger.burger-active 
+      span
+      span
+      span
+    +navigation
+    +social
+  header.sticky__header
+    .container
+      .header__header
           .header__logo
             +logo
           +navigation
           +social
-        h1 SIMPLE & MODERN   
-        h5 WE MAKE THE WORLD BEAUTIFUL EVERYDAY     
-        +arrow
+          +burger  
+  .welcome
+    .header__wrap
+      +arrow
+      .container
+        //- .header__header
+        //-   .header__logo
+        //-     +logo
+        //-   +navigation
+        //-   +social
+        //-   +burger
+        div(class="header__slider swiper mySwiperHeader")  
+          div(class="header__block swiper-wrapper")
+            .swiper-slide
+              h1 SIMPLE & MODERN
+              h5 WE MAKE THE WORLD BEAUTIFUL EVERY DAY
+            .swiper-slide  
+              h1 BEST OF THE BEST    
+              h5 WE MAKE THE WORLD BEAUTIFUL EVERY NIGHT
+            .swiper-slide  
+              h1 MODERN & SIMPLE   
+              h5 WE MAKE THE WORLD BEAUTIFUL!!!
+            .swiper-slide  
+              h1 MODERN & MODERN 
+              h5 WE MAKE THE WORLD BEAUTIFUL ALWAYS
+            .swiper-slide  
+              h1 SIMPLE AND EASY   
+              h5 WE MAKE THE WORLD BEAUTIFUL       
+        //- пагінація
+        .swiper-pagination-header          
 

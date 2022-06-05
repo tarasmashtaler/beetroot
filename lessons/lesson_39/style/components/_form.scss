@@ -1,7 +1,7 @@
 .form {
   &__wrapper {
     position: absolute;
-    bottom: 0;
+    top: 400px;
     left: 50%;
     transform: translateX(-50%);
     padding: 60px 0 70px 0;
@@ -35,8 +35,9 @@
       border: none;
       border-bottom: 1px solid $c-grey;
       opacity: 0.5;
-      height: 30px;
+      height: 40px;
       outline: none;
+      padding: 0 5px 10px 5px;
 
       &:focus {
         opacity: 1;
@@ -50,6 +51,27 @@
       }
     }
   }
+}
+
+form {
+  .form__item {
+    position: relative;
+    margin-bottom: 30px;
+
+
+
+    .form-error {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      font-size: $fs-12;
+      color: red;
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 // Block Contacts

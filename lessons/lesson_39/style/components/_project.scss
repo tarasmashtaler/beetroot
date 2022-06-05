@@ -2,6 +2,9 @@
   &__wrapper {
     padding: 100px 0 140px 0;
     overflow: hidden;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
   }
   &__block {
     margin-top: 145px;

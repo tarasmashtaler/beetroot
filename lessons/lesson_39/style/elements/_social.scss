@@ -1,6 +1,10 @@
-.social__wrapper {
+header .social__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include media("<=desktop") {
+    display: none;
+  }
 }
 
 .social__item {
@@ -34,4 +38,9 @@
       height: 18px;
     }
   }
+}
+
+footer .social__wrapper {
+  display: flex;
+  justify-content: space-between;
 }

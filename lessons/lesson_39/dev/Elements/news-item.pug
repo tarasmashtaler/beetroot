@@ -1,9 +1,12 @@
 mixin news-item(args)
   div(class="news__item swiper-slide")
-    img(alt="news-image" src='./assets/'+args.img)
-    .news__item-content
-      h3= args.title
-      div= args.text
+    .news__item-top
+      img(alt="news-image" src='./assets/'+args.img)
+      .news__item-content
+        .news__item-title
+          h3= args.title
+          div= args.text
+    .news__item-bottom      
       .news__author
         img(alt="news-foto" src='./assets/'+args.foto)
         .news__name
