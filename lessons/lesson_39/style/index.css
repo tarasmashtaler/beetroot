@@ -427,6 +427,24 @@ li {
   margin: 0 auto;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 964px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 770px;
+  }
+}
+
 header .social__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,6 +838,7 @@ body button:focus {
 }
 
 header {
+  z-index: 101;
   position: -webkit-sticky;
   position: sticky;
   left: 0;
@@ -1040,6 +1059,10 @@ header {
   min-width: 0;
 }
 
+.news__wrapper .container {
+  position: relative;
+}
+
 .news__wrapper h2 {
   color: #FFFFFF;
   margin-top: 30px;
@@ -1053,6 +1076,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1170px;
 }
 
 .news__item {
@@ -1110,33 +1134,49 @@ header {
 }
 
 .mySwiper {
-  margin: 90px 20px 0;
+  margin-top: 90px;
 }
 
-.news__wrapper .swiper-button-next,
 .news__wrapper .swiper-button-prev {
+  left: -90px;
   width: 40px;
   height: 40px;
 }
 
-.news__wrapper .swiper-button-next::after,
+@media (max-width: 1199px) {
+  .news__wrapper .swiper-button-prev {
+    left: -40px;
+  }
+}
+
 .news__wrapper .swiper-button-prev::after {
   content: '';
   position: absolute;
   background: url(../assets/Right.svg);
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
 
-.news__wrapper .swiper-button-prev {
-  right: auto;
+.news__wrapper .swiper-button-next {
+  right: -90px;
+  width: 40px;
+  height: 40px;
 }
 
-.news__wrapper .swiper-button-prev::after {
+@media (max-width: 1199px) {
+  .news__wrapper .swiper-button-next {
+    right: -40px;
+  }
+}
+
+.news__wrapper .swiper-button-next::after {
+  content: '';
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  background: url(../assets/Right.svg);
+  width: 100%;
+  height: 100%;
 }
 
 .news__wrapper .swiper-pagination {
@@ -1181,6 +1221,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1400px) {
+  .news__wrapper.item-slider-news {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .project__wrapper {

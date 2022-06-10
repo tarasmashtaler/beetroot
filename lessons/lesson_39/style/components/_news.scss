@@ -12,6 +12,11 @@
     padding-bottom: 200px;
     min-width: 0;
 
+    .container {
+      position: relative;
+
+    }
+
     h2 {
       color: $c-white;
       margin-top: 30px;
@@ -22,6 +27,7 @@
   &__block {
     display: flex;
     justify-content: space-between;
+    max-width: 1170px;
     // margin-top: 90px;
   }
 
@@ -74,37 +80,47 @@
 
 // swiper
 .mySwiper {
-  margin: 90px 20px 0; 
+  margin-top: 90px;
 }
 
 .news__wrapper {
-
-  & .swiper-button-next,
   & .swiper-button-prev {
-    // position: relative;
-    // right: 50px;
-    // left: 50px`;
+    left: -90px;
     width: 40px;
     height: 40px;
+
+    @media (max-width: 1199px) {
+      left: -40px;
+    }
 
     &::after {
       content: '';
       position: absolute;
       background: url(../assets/Right.svg);
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
     }
   }
 
-  & .swiper-button-prev {
-    right: auto;
+  & .swiper-button-next {
+    right: -90px;
+    width: 40px;
+    height: 40px;
+
+    @media (max-width: 1199px) {
+      right: -40px;
+    }
 
     &::after {
+      content: '';
       transform: rotate(180deg);
+      position: absolute;
+      background: url(../assets/Right.svg);
+      width: 100%;
+      height: 100%;
     }
   }
+
 
   & .swiper-pagination {
     position: relative;
@@ -133,6 +149,7 @@
         background-color: $c-white;
       }
     }
+
   }
 }
 
@@ -141,4 +158,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@include media("<=screen") {
+  .news__wrapper.item-slider-news {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

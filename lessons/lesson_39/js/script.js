@@ -11,9 +11,21 @@ let swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 4000,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  // },
+
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  }
 });
 
 let swiperHeader = new Swiper(".mySwiperHeader", {
@@ -29,7 +41,7 @@ let swiperHeader = new Swiper(".mySwiperHeader", {
 });
 
 
-// activ circle тnavigation
+// activ circle navigation
 
 const menuCircle = document.getElementsByClassName('navigation__link');
 console.log(menuCircle);
@@ -139,7 +151,7 @@ let header = document.querySelector('.sticky__header');
 
 window.addEventListener('scroll', () => {
     let yPosition = window.scrollY;
-    console.log(yPosition);
+    // console.log(yPosition);
     if (yPosition > 150) {
         header.classList.add('sticked');
     }
