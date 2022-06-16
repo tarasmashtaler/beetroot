@@ -1,32 +1,63 @@
 // SWAPER
-let swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // autoplay: {
-  //   delay: 4000,
-  // },
+window.addEventListener('load', (event) => {
+  let swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    // freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // autoplay: {
+    //   delay: 4000,
+    // },
 
-  breakpoints: {
-    480: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  }
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      320: {
+        slidesPerView: 1,
+      }
+    }
+  });
 });
+
+// let swiper = new Swiper(".mySwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   // freeMode: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   // autoplay: {
+//   //   delay: 4000,
+//   // },
+
+//   breakpoints: {
+//     1200: {
+//       slidesPerView: 4,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     480: {
+//       slidesPerView: 1,
+//     }
+//   }
+// });
 
 let swiperHeader = new Swiper(".mySwiperHeader", {
   slidesPerView: 1,
@@ -73,7 +104,7 @@ burgerMenuLinks.map(item => {
     burgerMenu.style.display = 'none';
     burgerMenuOverlay.style.display = 'none';
   });
-}); 
+});
 menuButton.addEventListener("click", () => {
   burgerMenu.style.display = 'block';
   burgerMenuOverlay.style.display = 'block';
@@ -150,12 +181,12 @@ loadUser.addEventListener('click', () => {
 let header = document.querySelector('.sticky__header');
 
 window.addEventListener('scroll', () => {
-    let yPosition = window.scrollY;
-    // console.log(yPosition);
-    if (yPosition > 150) {
-        header.classList.add('sticked');
-    }
-    if (yPosition < 100){
-        header.classList.remove('sticked');
-    }
+  let yPosition = window.scrollY;
+  // console.log(yPosition);
+  if (yPosition > 150) {
+    header.classList.add('sticked');
+  }
+  if (yPosition < 100) {
+    header.classList.remove('sticked');
+  }
 });

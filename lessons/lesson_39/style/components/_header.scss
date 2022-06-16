@@ -13,6 +13,7 @@ header {
   margin: -100px auto 0;
   max-height: 920px;
   background-image: url("../assets/header-background.jpg");
+  background-size: cover;
 }
 
 .welcome {
@@ -23,6 +24,7 @@ header {
     width: 100%;
     padding: 0 50px;
     background-image: url("../assets/header-background.png");
+    background-size: cover;
 
     .mySwiperHeader {
       padding-top: 320px;

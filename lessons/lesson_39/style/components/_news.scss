@@ -14,7 +14,6 @@
 
     .container {
       position: relative;
-
     }
 
     h2 {
@@ -34,7 +33,7 @@
   &__item {
     background-color: $c-white;
     width: 100%;
-    max-width: 370px;
+    // max-width: 370px;
 
     &-content {
       padding: 30px 20px;
@@ -70,6 +69,18 @@
       color: $c-laguna;
       margin-top: 5px;
     }
+  }
+}
+
+.news__item-title div {
+  @include media("<=desktop") {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  @include media("<=tablet") {
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 

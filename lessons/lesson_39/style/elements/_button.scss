@@ -11,6 +11,12 @@ body button {
     cursor: pointer;
     padding: 20px 40px;
     color: $c-button-black;
+
+    @include media("<=desktop") {
+      padding: 10px 20px;
+      font-size: 10px;
+      line-height: 13px;
+    }
   }
 }
 

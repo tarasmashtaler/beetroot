@@ -9,6 +9,7 @@ body {
   font-size: $fs-22;
   color: $c-grey;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,12 +35,33 @@ h1 {
 h2 {
   line-height: 54px;
   font-weight: $fw-bold;
+
+  @include media("<=desktop") {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  @include media("<=tablet") {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 h3 {
   font-size: $fs-22;
   line-height: 27px;
   font-weight: $fw-bold;
+
+  @include media("<=desktop") {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @include media("<=tablet") {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
 }
 
 h4 {
@@ -52,6 +74,16 @@ h5 {
   font-size: $fs-18;
   line-height: 22px;
   font-weight: $fw-base;
+
+  @include media("<=desktop") {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include media("<=tablet") {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 img {
@@ -84,13 +116,13 @@ li {
   @include media("<=desktop-screen") {
     max-width: 964px;
   }
-  
+
   @include media("<=desktop") {
     max-width: 770px;
   }
-  
+
   // @media (max-width: 767px) {
   //     max-width: 579px;
   //     padding: 0 20px; } 
-  
+
 }

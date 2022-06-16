@@ -14,11 +14,19 @@
   &__block {
     display: flex;
     margin-top: 40px;
+
+    @include media("<=tablet") {
+      margin-top: 20px;
+    }
   }
 
   &__block-left {
     width: 100%;
     margin-right: 40px;
+
+    @include media("<=tablet") {
+      margin-right: 20px;
+    }
   }
 
   &__svg {
@@ -38,6 +46,10 @@
       height: 40px;
       outline: none;
       padding: 0 5px 10px 5px;
+
+      @include media("<=desktop") {
+        font-size: 18px;
+      }
 
       &:focus {
         opacity: 1;
@@ -78,6 +90,16 @@ form {
 .form__contacts {
   display: flex;
   margin-bottom: 30px;
+
+  span {
+    @include media("<=desktop") {
+      font-size: 18px;
+    }
+
+    @include media("<=tablet") {
+      font-size: 16px;
+    }
+  }
 
   &-contact {
     span {

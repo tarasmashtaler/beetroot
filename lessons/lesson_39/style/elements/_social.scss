@@ -7,6 +7,13 @@ header .social__wrapper {
   }
 }
 
+footer .social__wrapper {
+  @include media("<=phone") {
+    max-width: 220px;
+    margin-top: 50px;
+  }
+}
+
 .social__item {
   margin-right: 20px;
   width: 40px;
