@@ -1,0 +1,87 @@
+//- Components
+
+include ./dev/Components/header
+include ./dev/Components/header-secondary
+include ./dev/Components/services
+include ./dev/Components/footer
+
+
+
+//- Elements
+
+include ./dev/Elements/logo
+include ./dev/Elements/service-item
+include ./dev/Elements/svg-elements
+
+//- Page
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon" href="./../../images/favicon.ico" type="image/x-icon")
+		title PUG
+		link(rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+		link(rel="stylesheet" href="./style/scss/index.css")
+	body
+		+svg-elements()
+		+header()
+		maim
+			.container
+				.architectural__wrap
+					h1 Architectural Photography
+					.architectural__grid-container
+						.architectural__item1
+							img(src='./assets/Architectural1.jpg')
+						.architectural__item2
+							img(src='./assets/Architectural2.jpg')
+						.architectural__item3
+							img(src='./assets/Architectural3.jpg')
+						.architectural__item4
+							img(src='./assets/Architectural4.jpg')
+						.architectural__item5
+							img(src='./assets/Architectural5.jpg')
+						.architectural__item6
+							img(src='./assets/Architectural6.jpg')
+				.still_wrap
+					h1 Still Life Photography
+					.still__grid-container
+						.still__item1
+							img(src='./assets/still1.jpg')
+						.still__item2
+							img(src='./assets/still2.jpg')
+						.still__item3
+							img(src='./assets/still3.jpg')
+						.still__item4
+							img(src='./assets/still4.jpg')
+						.still__item5
+							img(src='./assets/still5.jpg')
+						.still__item6
+							img(src='./assets/still6.jpg')
+				.portrait_wrap
+					h1 Portrait and Fashion Photography
+					.portrait__grid-container
+						.portrait__item1
+							img(src='./assets/portrait1.jpg')
+						.portrait__item2
+							img(src='./assets/portrait2.jpg')
+						.portrait__item3
+							img(src='./assets/portrait3.jpg')
+						.portrait__item4
+							img(src='./assets/portrait4.jpg')
+						//- .portrait__item5
+						//- 	img(src='./assets/portrait5.jpg')
+						//- .portrait__item6
+						//- 	img(src='./assets/portrait6.jpg')
+						//- .portrait__item7
+						//- 	img(src='./assets/portrait7.jpg')
+						//- .portrait__item8
+						//- 	img(src='./assets/portrait8.jpg')
+						//- .portrait__item9
+						//- 	img(src='./assets/portrait9.jpg')
+						//- .portrait__item10
+						//- 	img(src='./assets/portrait10.jpg')
+		footer
+			//- .footer__wrap
+			//- 	+footer()

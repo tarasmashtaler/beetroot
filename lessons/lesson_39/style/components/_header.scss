@@ -117,6 +117,15 @@ header {
   gap: 40px;
   left: auto;
   width: 20px;
+
+  @include media("<=desktop") {
+    gap: 30px;
+  }
+
+  @include media("<=tablet") {
+    gap: 20px;
+    // top: 40%;
+  }
 }
 
 

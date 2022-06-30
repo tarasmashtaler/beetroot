@@ -307,31 +307,30 @@
               </div>
             </div>
             <div class="form__block-right">
-              <form><div class="form__item form__item-fullname">
-<label for="username" class="form-label"></label>
-<input type="text" class="form-input" name="username" id="username">
-<span class="form-error form-error-user hidden" id="js-form-error">
-</div>
-<div class="form__item form__item-email">
-<label for="email" class="form-label"></label>
-<input type="email" class="form-input" name="email" id="email" placeholder="Email">
-<span class="form-error form-error-email hidden" id="js-form-error">
-</div>
+              <form>
+                <div class="form__item form__item-fullname">
+                  <label class="form-label" for="username"></label>
+                  <input class="form-input" type="text" name="username" id="username"/><span class="form-error form-error-user hidden" id="js-form-error"></span>
+                </div>
+                <div class="form__item form__item-email">
+                  <label class="form-label" for="email"></label>
+                  <input class="form-input" type="email" name="email" id="email" placeholder="Email"/><span class="form-error form-error-email hidden" id="js-form-error"></span>
+                </div>
               </form>
               <div class="form__wrapper-button">
-                <button class="form__button" type="button" id="js-load-user"><span>SUBMIT</span></button><div class="form__success">
-<span class="form-success hidden" id="js-form-success">   
+                <button class="form__button" type="button" id="js-load-user"><span>SUBMIT</span></button>
+                <div class="form__success"><span class="form-success hidden" id="js-form-success">  </span></div>
               </div>
             </div>
           </div>
         </div>
       </div><script>
-      <!-- let map;
+      <!-- let map11 = 22;
       function initMap() {
         let pos = {lat: 40.704684167724146, lng: -73.90215018656934};
         let opt = {
           center: {lat: 40.68077900625095, lng: -73.93857836621153},
-          zoom: 16,
+          zoom: 16
         };  
         let map = new google.maps.Map(document.getElementById('map'), opt);
         let marker = new google.maps.Marker({
@@ -341,7 +340,7 @@
           icon: ''
         });
       }
-      --></script>    
+      --></script> 
     </div>
     <footer>
       <div class="footer__wrapper">

@@ -29,22 +29,20 @@ mixin form()
               span From 07:05AM to 19:30PM
         .form__block-right
           form
-            <div class="form__item form__item-fullname">
-              <label for="username" class="form-label"></label>
-              <input type="text" class="form-input" name="username" id="username">
-              <span class="form-error form-error-user hidden" id="js-form-error">
-            </div>
-            <div class="form__item form__item-email">
-              <label for="email" class="form-label"></label>
-              <input type="email" class="form-input" name="email" id="email" placeholder="Email">
-              <span class="form-error form-error-email hidden" id="js-form-error">
-            </div>
+            div(class="form__item form__item-fullname")
+              label(for="username" class="form-label")
+              input(type="text" class="form-input" name="username" id="username")
+              span(class="form-error form-error-user hidden" id="js-form-error")
+            div(class="form__item form__item-email")
+              label(for="email" class="form-label")
+              input(type="email" class="form-input" name="email" id="email" placeholder="Email")
+              span(class="form-error form-error-email hidden" id="js-form-error")
           .form__wrapper-button
             +button({
               class: 'form__button',
               text: 'SUBMIT',
               id: 'js-load-user'
               })
-            <div class="form__success">
-              <span class="form-success hidden" id="js-form-success">   
+            .form__success
+              span(class="form-success hidden" id="js-form-success")   
     

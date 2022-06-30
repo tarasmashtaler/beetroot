@@ -68,7 +68,7 @@
       margin-left: 70px;
 
       @include media("<=desktop") {
-        margin-left: 0;
+        margin-left: 10px;
       }
     }
 
@@ -107,6 +107,10 @@
 
     button {
       margin-top: 40px;
+
+      @include media("<=desktop") {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -115,6 +119,10 @@
   &__block {
     display: flex;
     margin-top: 60px;
+
+    @include media("<=desktop") {
+      margin-top: 30px;
+    }
   }
 
   &__content {
