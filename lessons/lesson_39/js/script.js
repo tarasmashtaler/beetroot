@@ -7,14 +7,14 @@ window.addEventListener('load', (event) => {
     },
     slidesPerView: 3,
     spaceBetween: 30,
-    // freeMode: true,
+    freeMode: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 4000,
+    },
 
     breakpoints: {
       768: {
@@ -66,9 +66,9 @@ let swiperHeader = new Swiper(".mySwiperHeader", {
     el: ".swiper-pagination-header",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 4000,
-  // },
+  autoplay: {
+    delay: 4000,
+  },
 });
 
 
