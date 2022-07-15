@@ -653,7 +653,7 @@ header .header__navigation {
   max-width: 300px;
   height: 100%;
   background-color: #FFFFFF;
-  z-index: 55;
+  z-index: 155;
   padding-top: 100px;
   display: none;
   -webkit-box-shadow: 1px 1px 14px 13px #26232370;
@@ -1252,6 +1252,8 @@ header {
   background: url(../assets/Right.svg);
   width: 100%;
   height: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .news__wrapper .swiper-button-next {
@@ -1274,8 +1276,6 @@ header {
 
 .news__wrapper .swiper-button-next::after {
   content: '';
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   position: absolute;
   background: url(../assets/Right.svg);
   width: 100%;
@@ -1599,6 +1599,13 @@ footer {
   background-position: right;
 }
 
+@media (max-width: 480px) {
+  footer {
+    padding: 100px 0 115px 0;
+    height: auto;
+  }
+}
+
 .footer__wrapper {
   width: 100%;
   max-width: 770px;
@@ -1617,7 +1624,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 50px;
+    margin-left: 20px;
+    max-width: 200px;
   }
 }
 
@@ -1647,6 +1655,13 @@ footer {
   height: 450px;
 }
 
+@media (max-width: 480px) {
+  .form__wrapper {
+    top: 300px;
+    padding: 30px 0 0 0;
+  }
+}
+
 .form__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1657,6 +1672,18 @@ footer {
 @media (max-width: 768px) {
   .form__block {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1679,6 +1706,12 @@ footer {
 
 .form__block-right {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .form__block-right {
+    margin-top: 10px;
+  }
 }
 
 .form__block-right input {
@@ -1730,6 +1763,12 @@ form .form__item .form-error {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .form__contacts {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 1024px) {

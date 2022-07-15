@@ -6,6 +6,13 @@ footer {
   height: 550px;
   background-image: url("../assets/footer.jpg");
   background-position: right;
+
+  @include media("<=phone") {
+  padding: 100px 0 115px 0;
+  height: auto;
+  }
+
+
 }
 
 .footer {
@@ -18,8 +25,8 @@ footer {
 
     @include media("<=phone") {
       flex-direction: column;
-      margin-left: 50px;
-
+      margin-left: 20px;
+      max-width: 200px;
     }
 
   }
